@@ -1,0 +1,1 @@
+import"../sass/main.scss";const type=document.querySelector(".type"),options=document.querySelector(".options");type.addEventListener("click",(()=>{options.classList.toggle("show")}));
