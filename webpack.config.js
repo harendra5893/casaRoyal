@@ -16,14 +16,18 @@ module.exports = {
         // new HtmlWebpackLiveReload(),
         new MiniCssExtractPlugin(),
     ],
-  mode: "development",
+  mode: "production",
   entry: {
-    bundle: path.resolve(__dirname, "src/js/index.js"),
+    // bundle: path.resolve(__dirname, "./src/js/index.js"),
+    index: './src/js/index.js'
   },
   output: {
-    path: path.resolve(__dirname, "dist"),
     filename: "[name].js",
+    path: path.resolve(__dirname, 'dist'),
+    clean: true,
   },
+
+
   devServer: {
     static: "./src",
   },
@@ -60,5 +64,6 @@ module.exports = {
     minimize: true,
     minimizer: [new TerserPlugin()],
   },
+  performance: { hints: false }
   
 };

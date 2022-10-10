@@ -1,0 +1,1 @@
+import"../sass/main.scss";function myFunction(){document.body.classList.toggle("stop-scrolling"),document.querySelector(".nav-items").classList.toggle("ham-items")}
