@@ -1,4 +1,3 @@
-const { dirname } = require("path");
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { postcss } = require("postcss-preset-env");
@@ -6,27 +5,23 @@ const TerserPlugin = require("terser-webpack-plugin");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
+  plugins: [
+    new HtmlWebpackPlugin({
+      inject: "body",
+      template: "./src/index.html",
+      filename: "[name].html",
+    }),
+    new MiniCssExtractPlugin(),
+  ],
+  mode: "development",
 
-    plugins: [
-        new HtmlWebpackPlugin({
-          inject: 'body',
-          template: './src/index.html',
-          filename: 'index.html',
-        }),
-        // new HtmlWebpackLiveReload(),
-        new MiniCssExtractPlugin(),
-    ],
-  mode: "production",
   entry: {
-    // bundle: path.resolve(__dirname, "./src/js/index.js"),
-    index: './src/js/index.js'
+    index: "./src/js/index.js",
   },
   output: {
     filename: "[name].js",
-    path: path.resolve(__dirname, 'dist'),
-    clean: true,
+    path: path.resolve(__dirname, "./"),
   },
-
 
   devServer: {
     static: "./src",
@@ -36,27 +31,30 @@ module.exports = {
     rules: [
       {
         test: /\.(sc|c)ss$/i,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader", "postcss-loader"],
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "sass-loader",
+          "postcss-loader",
+        ],
       },
       {
-        test: /\.(jpe?g|png|gif|svg)$/,
+        test: /\.(webm|jpe?g|png|gif|svg)$/,
         type: "asset/resource",
         generator: {
-          filename: 'images/[hash][ext][query]'
-        }
+          filename: "images/[name][ext][query]",
+        },
       },
       {
         test: /\.(woff(2)?|ttf|otf|eot)(\?v=\d+\.\d+\.\d+)?$/,
         type: "asset/resource",
         generator: {
-          filename: 'fonts/[name][ext][query]'
-        }
+          filename: "fonts/[name][ext][query]",
+        },
       },
       {
-        test:/\.html$/,
-        use: [
-          'html-loader'
-        ]
+        test: /\.html$/,
+        use: ["html-loader"],
       },
     ],
   },
@@ -64,6 +62,5 @@ module.exports = {
     minimize: true,
     minimizer: [new TerserPlugin()],
   },
-  performance: { hints: false }
-  
+  performance: { hints: false },
 };
