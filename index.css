@@ -84,6 +84,10 @@ meter {
   -webkit-user-drag: element;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1254px;
   margin: 0 auto;
@@ -898,11 +902,13 @@ form .options.show {
   transform: translate(-50%, -50%);
   visibility: hidden;
   opacity: 0;
+  z-index: 99;
   transition: 0.4s ease-in-out;
 }
 .hot-deals .deal-video video {
   width: 100%;
   height: 100%;
+  box-shadow: 0 0px 10px #111111;
 }
 .hot-deals .fa-x {
   position: absolute;
@@ -934,9 +940,18 @@ form .options.show {
 }
 .hot-deals .fa-circle-play {
   font-size: 100px;
-  color: #9b9b9b;
   display: block;
   margin: 60px 0;
+  animation: jump 0.5s ease-in infinite;
+  color: #9c47fc;
+  background: -webkit-linear-gradient(#356ad2, #ff5406);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@keyframes jump {
+  50% {
+    transform: translateY(-10px);
+  }
 }
 .hot-deals .info-icons {
   display: flex;
@@ -963,9 +978,6 @@ form .options.show {
   .hot-deals article {
     position: initial;
     padding: 18px 50px;
-  }
-  .hot-deals .deal-video {
-    max-width: 80%;
   }
   .hot-deals .info-icons span {
     margin-top: 0;
@@ -1155,6 +1167,7 @@ form .options.show {
   }
   .our-agencies li {
     flex: 0 0 32%;
+    margin-bottom: 0;
   }
 }
 
@@ -1169,12 +1182,6 @@ form .options.show {
 .articles li {
   background-color: #ffffff;
   border-radius: 6px;
-}
-.articles li a {
-  display: inline-block;
-}
-.articles picture {
-  display: inline-block;
 }
 .articles picture img {
   display: block;
