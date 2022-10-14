@@ -5,7 +5,7 @@ const TerserPlugin = require("terser-webpack-plugin");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
-  mode: "production",
+  mode: "development",
   plugins: [
     new HtmlWebpackPlugin({
       inject: "body",
