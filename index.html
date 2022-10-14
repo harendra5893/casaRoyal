@@ -8,7 +8,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/3235c268e4.js"
       crossorigin="anonymous"
@@ -74,904 +73,981 @@
     </header>
     <main>
       <section class="hero">
-        <div class="container">
-          <article>
-            <h1 class="hero__title">Let Us Guide You Home</h1>
-            <p>Find the house of your dreams</p>
-            <form onsubmit="return false">
-              <div class="form__dropdown">
-                <div class="select-option">
-                  <span>Type</span>
-                  <div class="type">
-                    Select Type <i class="fa-sharp fa-solid fa-angle-down"></i>
-                  </div>
-                </div>
-                <ul class="options">
-                  <li>
-                    <a href="javascript:void(0)">PentHouse</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">Villa</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">8-Bhk</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">6-Bhk</a>
-                  </li>
-                </ul>
+        <article class="container">
+          <h1 class="hero__title">Let Us Guide You Home</h1>
+          <p>Find the house of your dreams</p>
+          <form onsubmit="return false">
+            <div class="form__dropdown">
+              <span>Type</span>
+              <div class="selected">
+                <h5 class="type">Select Type</h5>
               </div>
-              <div class="form__dropdown">
-                <div class="select-option">
-                  <span>Status</span>
-                  <div class="type">
-                    Select Status
-                    <i class="fa-sharp fa-solid fa-angle-down"></i>
-                  </div>
+
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    class="radio"
+                    id="penthouse"
+                    name="category"
+                  />
+                  <label for="penthouse" class="type">PentHouse</label>
                 </div>
-                <ul class="options">
-                  <li>
-                    <a href="javascript:void(0)">PentHouse</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">Villa</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">8-Bhk</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">6-Bhk</a>
-                  </li>
-                </ul>
+                <div class="option">
+                  <input
+                    type="radio"
+                    class="radio"
+                    id="villa"
+                    name="category"
+                  />
+                  <label for="villa" class="type">Villa</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    class="radio"
+                    id="8-Bhk"
+                    name="category"
+                  />
+                  <label for="8-Bhk" class="type">8 - Bhk</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    class="radio"
+                    id="6-Bhk"
+                    name="category"
+                  />
+                  <label for="6-Bhk" class="type">6 - Bhk</label>
+                </div>
               </div>
-              <input
-                class="select-option"
-                type="text"
-                placeholder="Searh for properties or keywords…"
-              />
-              <button class="btn blue-btn">FIND PROPERTIES</button>
-            </form>
-          </article>
-        </div>
+              <i class="fa-sharp fa-solid fa-angle-down"></i>
+            </div>
+
+            <div class="form__dropdown">
+              <span>Status</span>
+              <div class="selected">
+                <h5 class="type">Select Status</h5>
+              </div>
+              <div class="options">
+                <div class="option">
+                  <input
+                    type="radio"
+                    class="radio"
+                    id="penthouse"
+                    name="category"
+                  />
+                  <label for="penthouse" class="type">PentHouse</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    class="radio"
+                    id="villa"
+                    name="category"
+                  />
+                  <label for="villa" class="type">Villa</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    class="radio"
+                    id="8-Bhk"
+                    name="category"
+                  />
+                  <label for="8-Bhk" class="type">8 - Bhk</label>
+                </div>
+                <div class="option">
+                  <input
+                    type="radio"
+                    class="radio"
+                    id="6-Bhk"
+                    name="category"
+                  />
+                  <label for="6-Bhk" class="type">6 - Bhk</label>
+                </div>
+              </div>
+              <i class="fa-sharp fa-solid fa-angle-down"></i>
+            </div>
+
+            <input
+              class="selected"
+              type="text"
+              placeholder="Search for properties or keywords…"
+            />
+            <button class="btn blue-btn">FIND PROPERTIES</button>
+          </form>
+        </article>
       </section>
       <section class="featured py-main" id="featured-sec">
         <div class="container">
-          <p class="title-txt mb-tt">CASAROYAL REAL ESTATE AGENCY</p>
-          <h2 class="title-lg mb-title" data-aos="fade-up">
+          <p class="title-txt mb-tt reveal">CASAROYAL REAL ESTATE AGENCY</p>
+          <h2 class="title-lg mb-title reveal">
             <span class="bold">Featured</span> Properties
           </h2>
           <ul class="properties-container flex">
             <li class="property">
-              <a href="javascript:void(0)">
-                <figure>
-                  <picture>
-                    <!-- <source
+              <figure>
+                <picture>
+                  <!-- <source
                       srcset="
                         /src/images/property-image_6.png    1x,
                         /src/images/property-image_6@2x.png 2x
                       "
                     /> -->
-                    <img
-                      src="images/property-image_6.png"
-                      alt="property-image"
-                    />
-                  </picture>
-                  <figcaption>
-                    <div class="caption-top">
-                      <div class="info">
-                        <p>HOUSE</p>
-                        <p>FOR SALE</p>
-                      </div>
-                      <p class="icons">
-                        <i class="fa fa-thin fa-bolt"></i>
-                      </p>
+                  <img
+                    src="https://via.placeholder.com/450?text=Loading"
+                    data-src="/images/property-image_6.png"
+                    alt="property-image"
+                    class="lazy"
+                  />
+                </picture>
+                <figcaption>
+                  <div class="caption-top">
+                    <div class="info">
+                      <p>HOUSE</p>
+                      <p>FOR SALE</p>
                     </div>
-                    <div class="caption-bottom">
-                      <p>$320,000.00</p>
-                      <div class="icons">
-                        <i class="fa fa-regular fa-heart"></i>
-                        <i class="fas fa-regular fa-arrow-right-arrow-left"></i>
-                      </div>
-                    </div>
-                  </figcaption>
-                </figure>
-                <div class="property-data" data-aos="fade-up">
-                  <p class="city-name txt-silver">
-                    <i class="fa fa-thin fa-location-dot"></i> Beverly Hills, CA
-                  </p>
-                  <p class="property__address">
-                    272 S Rexford Dr, Beverly Hills, CA<br />
-                    90212, USA
-                  </p>
-                  <p class="ownr-name">
-                    <img
-                      src="images/agent-1-3-60-x-60.png"
-                      alt="agent-pic"
-                    />
-                    Helen Mattis
-                  </p>
-                  <span class="month-old txt-silver">4 months ago</span>
-                  <hr />
-                  <div class="prop-info">
-                    <p class="prop-size">
-                      <img src="images/area-icon_2.svg" />
-                      <b class="bold">2400</b> Sq Ft
-                    </p>
-                    <p class="prop-room">
-                      <img src="images/garage-icon_2.svg" /><span>2</span>
-                      <img src="images/bathroom-icon_2.svg" /><span
-                        >3</span
-                      >
-                      <img src="images/bathroom-icon_2.svg" /><span
-                        >3</span
-                      >
+                    <p class="icons">
+                      <i class="fa fa-thin fa-bolt"></i>
                     </p>
                   </div>
+                  <div class="caption-bottom">
+                    <p class="info">$320,000.00</p>
+                    <div class="icons">
+                      <a class="fa fa-regular fa-heart"></a>
+                      <a class="fas fa-regular fa-arrow-right-arrow-left"></a>
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+              <div class="property-data">
+                <p class="city-name txt-silver">
+                  <a href="javascript:void(0)"
+                    ><i class="fa fa-thin fa-location-dot"></i> Beverly Hills,
+                    CA</a
+                  >
+                </p>
+                <p class="property__address">
+                  <a
+                    >272 S Rexford Dr, Beverly Hills, CA<br />
+                    90212, USA</a
+                  >
+                </p>
+                <p class="ownr-name">
+                  <a href="javascript:void(0)"
+                    ><img
+                      src="https://via.placeholder.com/450?text=Loading"
+                      data-src="/images/agent-1-3-60-x-60.png"
+                      alt="agent-pic"
+                      class="lazy"
+                    />
+                    Helen Mattis</a
+                  >
+                </p>
+                <span class="month-old txt-silver">4 months ago</span>
+                <hr />
+                <div class="prop-info">
+                  <p class="prop-size">
+                    <img src="images/area-icon_2.svg" />
+                    <b class="bold">2400</b> Sq Ft
+                  </p>
+                  <p class="prop-room">
+                    <img src="images/garage-icon_2.svg" /><span>2</span>
+                    <img src="images/bathroom-icon_2.svg" /><span>3</span>
+                    <img src="images/bathroom-icon_2.svg" /><span>3</span>
+                  </p>
                 </div>
-              </a>
+              </div>
             </li>
             <li class="property">
-              <a href="javascript:void(0)">
-                <figure>
-                  <picture>
-                    <!-- <source
+              <figure>
+                <picture>
+                  <!-- <source
                       srcset="
                         /src/images/property-image_5.png    1x,
                         /src/images/property-image_5@2x.png 2x
                       "
                     /> -->
-                    <img
-                      src="images/property-image_5.png"
-                      alt="property-image"
-                    />
-                  </picture>
-                  <figcaption>
-                    <div class="caption-top">
-                      <div class="info">
-                        <p>HOUSE</p>
-                        <p>FOR SALE</p>
-                      </div>
-                      <p class="icons">
-                        <i class="fa fa-thin fa-bolt"></i>
-                      </p>
+                  <img
+                    src="https://via.placeholder.com/450?text=Loading"
+                    data-src="/images/property-image_5.png"
+                    alt="property-image"
+                    class="lazy"
+                  />
+                </picture>
+                <figcaption>
+                  <div class="caption-top">
+                    <div class="info">
+                      <p>HOUSE</p>
+                      <p>FOR SALE</p>
                     </div>
-                    <div class="caption-bottom">
-                      <p>$320,000.00</p>
-                      <div class="icons">
-                        <i class="fa fa-regular fa-heart"></i>
-                        <i class="fas fa-regular fa-arrow-right-arrow-left"></i>
-                      </div>
-                    </div>
-                  </figcaption>
-                </figure>
-                <div class="property-data" data-aos="fade-up">
-                  <p class="city-name txt-silver">
-                    <i class="fa fa-thin fa-location-dot"></i> Beverly Hills, CA
-                  </p>
-                  <p class="property__address">
-                    272 S Rexford Dr, Beverly Hills, CA<br />
-                    90212, USA
-                  </p>
-                  <p class="ownr-name">
-                    <img
-                      src="images/agent-1-3-60-x-60.png"
-                      alt="agent-pic"
-                    />
-                    Helen Mattis
-                  </p>
-                  <span class="month-old txt-silver">4 months ago</span>
-                  <hr />
-                  <div class="prop-info">
-                    <p class="prop-size">
-                      <img src="images/area-icon_2.svg" />
-                      <b class="bold">2400</b> Sq Ft
-                    </p>
-                    <p class="prop-room">
-                      <img src="images/garage-icon_2.svg" /><span>2</span>
-                      <img src="images/bathroom-icon_2.svg" /><span
-                        >3</span
-                      >
-                      <img src="images/bathroom-icon_2.svg" /><span
-                        >3</span
-                      >
+                    <p class="icons">
+                      <i class="fa fa-thin fa-bolt"></i>
                     </p>
                   </div>
+                  <div class="caption-bottom">
+                    <p class="info">$320,000.00</p>
+                    <div class="icons">
+                      <a class="fa fa-regular fa-heart"></a>
+                      <a class="fas fa-regular fa-arrow-right-arrow-left"></a>
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+              <div class="property-data">
+                <p class="city-name txt-silver">
+                  <a href="javascript:void(0)"
+                    ><i class="fa fa-thin fa-location-dot"></i> Beverly Hills,
+                    CA</a
+                  >
+                </p>
+                <p class="property__address">
+                  <a href="javascript:void(0)">
+                    272 S Rexford Dr, Beverly Hills, CA<br />
+                    90212, USA</a
+                  >
+                </p>
+                <p class="ownr-name">
+                  <a href="javascript:void(0)">
+                    <img
+                      src="https://via.placeholder.com/450?text=Loading"
+                      data-src="/images/agent-1-3-60-x-60.png"
+                      alt="agent-pic"
+                      class="lazy"
+                    />
+                    Helen Mattis</a
+                  >
+                </p>
+                <span class="month-old txt-silver">4 months ago</span>
+                <hr />
+                <div class="prop-info">
+                  <p class="prop-size">
+                    <img src="images/area-icon_2.svg" />
+                    <b class="bold">2400</b> Sq Ft
+                  </p>
+                  <p class="prop-room">
+                    <img src="images/garage-icon_2.svg" /><span>2</span>
+                    <img src="images/bathroom-icon_2.svg" /><span>3</span>
+                    <img src="images/bathroom-icon_2.svg" /><span>3</span>
+                  </p>
                 </div>
-              </a>
+              </div>
             </li>
             <li class="property">
-              <a href="javascript:void(0)">
-                <figure>
-                  <picture>
-                    <!-- <source
+              <figure>
+                <picture>
+                  <!-- <source
                       srcset="
                         /src/images/property-image_4.png    1x,
                         /src/images/property-image_4@2x.png 2x 
                       "
                     /> -->
-                    <img
-                      src="images/property-image_4.png"
-                      alt="property-image"
-                    />
-                  </picture>
-                  <figcaption>
-                    <div class="caption-top">
-                      <div class="info">
-                        <p>HOUSE</p>
-                        <p>FOR SALE</p>
-                      </div>
-                      <p class="icons">
-                        <i class="fa fa-thin fa-bolt"></i>
-                      </p>
+                  <img
+                    src="https://via.placeholder.com/450?text=Loading"
+                    data-src="/images/property-image_4.png"
+                    alt="property-image"
+                    class="lazy"
+                  />
+                </picture>
+                <figcaption>
+                  <div class="caption-top">
+                    <div class="info">
+                      <p>HOUSE</p>
+                      <p>FOR SALE</p>
                     </div>
-                    <div class="caption-bottom">
-                      <p>$320,000.00</p>
-                      <div class="icons">
-                        <i class="fa fa-regular fa-heart"></i>
-                        <i class="fas fa-regular fa-arrow-right-arrow-left"></i>
-                      </div>
-                    </div>
-                  </figcaption>
-                </figure>
-                <div class="property-data" data-aos="fade-up">
-                  <p class="city-name txt-silver">
-                    <i class="fa fa-thin fa-location-dot"></i> Beverly Hills, CA
-                  </p>
-                  <p class="property__address">
-                    272 S Rexford Dr, Beverly Hills, CA<br />
-                    90212, USA
-                  </p>
-                  <p class="ownr-name">
-                    <img
-                      src="images/agent-1-3-60-x-60.png"
-                      alt="agent-pic"
-                    />
-                    Helen Mattis
-                  </p>
-                  <span class="month-old txt-silver">4 months ago</span>
-                  <hr />
-                  <div class="prop-info">
-                    <p class="prop-size">
-                      <img src="images/area-icon_2.svg" />
-                      <b class="bold">2400</b> Sq Ft
-                    </p>
-                    <p class="prop-room">
-                      <img src="images/garage-icon_2.svg" /><span>2</span>
-                      <img src="images/bathroom-icon_2.svg" /><span
-                        >3</span
-                      >
-                      <img src="images/bathroom-icon_2.svg" /><span
-                        >3</span
-                      >
+                    <p class="icons">
+                      <i class="fa fa-thin fa-bolt"></i>
                     </p>
                   </div>
+                  <div class="caption-bottom">
+                    <p class="info">$320,000.00</p>
+                    <div class="icons">
+                      <a class="fa fa-regular fa-heart"></a>
+                      <a class="fas fa-regular fa-arrow-right-arrow-left"></a>
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+              <div class="property-data">
+                <p class="city-name txt-silver">
+                  <a href="javascript:void(0)">
+                    <i class="fa fa-thin fa-location-dot"></i> Beverly Hills,
+                    CA</a
+                  >
+                </p>
+                <p class="property__address">
+                  <a href="javascript:void(0)">
+                    272 S Rexford Dr, Beverly Hills, CA<br />
+                    90212, USA</a
+                  >
+                </p>
+                <p class="ownr-name">
+                  <a href="javascript:void(0)">
+                    <img
+                      src="https://via.placeholder.com/450?text=Loading"
+                      data-src="/images/agent-1-3-60-x-60.png"
+                      alt="agent-pic"
+                      class="lazy"
+                    />
+                    Helen Mattis</a
+                  >
+                </p>
+                <span class="month-old txt-silver">4 months ago</span>
+                <hr />
+                <div class="prop-info">
+                  <p class="prop-size">
+                    <img src="images/area-icon_2.svg" />
+                    <b class="bold">2400</b> Sq Ft
+                  </p>
+                  <p class="prop-room">
+                    <img src="images/garage-icon_2.svg" /><span>2</span>
+                    <img src="images/bathroom-icon_2.svg" /><span>3</span>
+                    <img src="images/bathroom-icon_2.svg" /><span>3</span>
+                  </p>
                 </div>
-              </a>
+              </div>
             </li>
             <li class="property">
-              <a href="javascript:void(0)">
-                <figure>
-                  <picture>
-                    <!-- <source
+              <figure>
+                <picture>
+                  <!-- <source
                       srcset="
                         /src/images/property-image_3.png    1x,
                         /src/images/property-image_3@2x.png 2x
                       "
                     /> -->
-                    <img
-                      src="images/property-image_3.png"
-                      alt="property-image"
-                    />
-                  </picture>
-                  <figcaption>
-                    <div class="caption-top">
-                      <div class="info">
-                        <p>HOUSE</p>
-                        <p>FOR SALE</p>
-                      </div>
-                      <p class="icons">
-                        <i class="fa fa-thin fa-bolt"></i>
-                      </p>
+                  <img
+                    src="https://via.placeholder.com/450?text=Loading"
+                    data-src="/images/property-image_3.png"
+                    alt="property-image"
+                    class="lazy"
+                  />
+                </picture>
+                <figcaption>
+                  <div class="caption-top">
+                    <div class="info">
+                      <p>HOUSE</p>
+                      <p>FOR SALE</p>
                     </div>
-                    <div class="caption-bottom">
-                      <p>$320,000.00</p>
-                      <div class="icons">
-                        <i class="fa fa-regular fa-heart"></i>
-                        <i class="fas fa-regular fa-arrow-right-arrow-left"></i>
-                      </div>
-                    </div>
-                  </figcaption>
-                </figure>
-                <div class="property-data" data-aos="fade-up">
-                  <p class="city-name txt-silver">
-                    <i class="fa fa-thin fa-location-dot"></i> Beverly Hills, CA
-                  </p>
-                  <p class="property__address">
-                    272 S Rexford Dr, Beverly Hills, CA<br />
-                    90212, USA
-                  </p>
-                  <p class="ownr-name">
-                    <img
-                      src="images/agent-1-3-60-x-60.png"
-                      alt="agent-pic"
-                    />
-                    Helen Mattis
-                  </p>
-                  <span class="month-old txt-silver">4 months ago</span>
-                  <hr />
-                  <div class="prop-info">
-                    <p class="prop-size">
-                      <img src="images/area-icon_2.svg" />
-                      <b class="bold">2400</b> Sq Ft
-                    </p>
-                    <p class="prop-room">
-                      <img src="images/garage-icon_2.svg" /><span>2</span>
-                      <img src="images/bathroom-icon_2.svg" /><span
-                        >3</span
-                      >
-                      <img src="images/bathroom-icon_2.svg" /><span
-                        >3</span
-                      >
+                    <p class="icons">
+                      <i class="fa fa-thin fa-bolt"></i>
                     </p>
                   </div>
+                  <div class="caption-bottom">
+                    <p class="info">$320,000.00</p>
+                    <div class="icons">
+                      <a class="fa fa-regular fa-heart"></a>
+                      <a class="fas fa-regular fa-arrow-right-arrow-left"></a>
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+              <div class="property-data">
+                <p class="city-name txt-silver">
+                  <a href="javascript:void(0)">
+                    <i class="fa fa-thin fa-location-dot"></i> Beverly Hills,
+                    CA</a
+                  >
+                </p>
+                <p class="property__address">
+                  <a href="javascript:void(0)">
+                    272 S Rexford Dr, Beverly Hills, CA<br />
+                    90212, USA</a
+                  >
+                </p>
+                <p class="ownr-name">
+                  <a href="javascript:void(0)">
+                    <img
+                      src="https://via.placeholder.com/450?text=Loading"
+                      data-src="/images/agent-1-3-60-x-60.png"
+                      alt="agent-pic"
+                      class="lazy"
+                    />
+                    Helen Mattis</a
+                  >
+                </p>
+                <span class="month-old txt-silver">4 months ago</span>
+                <hr />
+                <div class="prop-info">
+                  <p class="prop-size">
+                    <img src="images/area-icon_2.svg" />
+                    <b class="bold">2400</b> Sq Ft
+                  </p>
+                  <p class="prop-room">
+                    <img src="images/garage-icon_2.svg" /><span>2</span>
+                    <img src="images/bathroom-icon_2.svg" /><span>3</span>
+                    <img src="images/bathroom-icon_2.svg" /><span>3</span>
+                  </p>
                 </div>
-              </a>
+              </div>
             </li>
             <li class="property">
-              <a href="javascript:void(0)">
-                <figure>
-                  <picture>
-                    <!-- <source
+              <figure>
+                <picture>
+                  <!-- <source
                       srcset="
                         /src/images/property-image_2.png    1x,
                         /src/images/property-image_2@2x.png 2x
                       "
                     /> -->
-                    <img
-                      src="images/property-image_2.png"
-                      alt="property-image"
-                    />
-                  </picture>
-                  <figcaption>
-                    <div class="caption-top">
-                      <div class="info">
-                        <p>HOUSE</p>
-                        <p>FOR SALE</p>
-                      </div>
-                      <p class="icons">
-                        <i class="fa fa-thin fa-bolt"></i>
-                      </p>
+                  <img
+                    src="https://via.placeholder.com/450?text=Loading"
+                    data-src="/images/property-image_2.png"
+                    alt="property-image"
+                    class="lazy"
+                  />
+                </picture>
+                <figcaption>
+                  <div class="caption-top">
+                    <div class="info">
+                      <p>HOUSE</p>
+                      <p>FOR SALE</p>
                     </div>
-                    <div class="caption-bottom">
-                      <p>$320,000.00</p>
-                      <div class="icons">
-                        <i class="fa fa-regular fa-heart"></i>
-                        <i class="fas fa-regular fa-arrow-right-arrow-left"></i>
-                      </div>
+                    <p class="icons">
+                      <i class="fa fa-thin fa-bolt"></i>
+                    </p>
+                  </div>
+                  <div class="caption-bottom">
+                    <p class="info">$320,000.00</p>
+                    <div class="icons">
+                      <a class="fa fa-regular fa-heart"></a>
+                      <a class="fas fa-regular fa-arrow-right-arrow-left"></a>
                     </div>
-                  </figcaption>
-                </figure>
-                <div class="property-data" data-aos="fade-up">
-                  <p class="city-name txt-silver">
-                    <i class="fa fa-thin fa-location-dot"></i> Beverly Hills, CA
-                  </p>
-                  <p class="property__address">
+                  </div>
+                </figcaption>
+              </figure>
+              <div class="property-data">
+                <p class="city-name txt-silver">
+                  <a href="javascript:void(0)">
+                    <i class="fa fa-thin fa-location-dot"></i> Beverly Hills,
+                    CA</a
+                  >
+                </p>
+                <p class="property__address">
+                  <a href="javascript:void(0)">
                     272 S Rexford Dr, Beverly Hills, CA<br />
-                    90212, USA
-                  </p>
-                  <p class="ownr-name">
+                    90212, USA</a
+                  >
+                </p>
+                <p class="ownr-name">
+                  <a href="javascript:void(0)">
                     <img
                       src="images/agent-1-3-60-x-60.png"
                       alt="agent-pic"
                     />
-                    Helen Mattis
+                    Helen Mattis</a
+                  >
+                </p>
+                <span class="month-old txt-silver">4 months ago</span>
+                <hr />
+                <div class="prop-info">
+                  <p class="prop-size">
+                    <img src="images/area-icon_2.svg" />
+                    <b class="bold">2400</b> Sq Ft
                   </p>
-                  <span class="month-old txt-silver">4 months ago</span>
-                  <hr />
-                  <div class="prop-info">
-                    <p class="prop-size">
-                      <img src="images/area-icon_2.svg" />
-                      <b class="bold">2400</b> Sq Ft
-                    </p>
-                    <p class="prop-room">
-                      <img src="images/garage-icon_2.svg" /><span>2</span>
-                      <img src="images/bathroom-icon_2.svg" /><span
-                        >3</span
-                      >
-                      <img src="images/bathroom-icon_2.svg" /><span
-                        >3</span
-                      >
-                    </p>
-                  </div>
+                  <p class="prop-room">
+                    <img src="images/garage-icon_2.svg" /><span>2</span>
+                    <img src="images/bathroom-icon_2.svg" /><span>3</span>
+                    <img src="images/bathroom-icon_2.svg" /><span>3</span>
+                  </p>
                 </div>
-              </a>
+              </div>
             </li>
             <li class="property">
-              <a href="javascript:void(0)">
-                <figure>
-                  <picture>
-                    <!-- <source
+              <figure>
+                <picture>
+                  <!-- <source
                       srcset="
                         /src/images/property-image.png    1x,
                         /src/images/property-image@2x.png 2x
                       "
                     /> -->
-                    <img
-                      src="images/property-image.png"
-                      alt="property-image"
-                    />
-                  </picture>
-                  <figcaption>
-                    <div class="caption-top">
-                      <div class="info">
-                        <p>HOUSE</p>
-                        <p>FOR SALE</p>
-                      </div>
-                      <p class="icons">
-                        <i class="fa fa-thin fa-bolt"></i>
-                      </p>
+                  <img
+                    src="images/property-image.png"
+                    alt="property-image"
+                  />
+                </picture>
+                <figcaption>
+                  <div class="caption-top">
+                    <div class="info">
+                      <p>HOUSE</p>
+                      <p>FOR SALE</p>
                     </div>
-                    <div class="caption-bottom">
-                      <p>$320,000.00</p>
-                      <div class="icons">
-                        <i class="fa fa-regular fa-heart"></i>
-                        <i class="fas fa-regular fa-arrow-right-arrow-left"></i>
-                      </div>
+                    <p class="icons">
+                      <i class="fa fa-thin fa-bolt"></i>
+                    </p>
+                  </div>
+                  <div class="caption-bottom">
+                    <p class="info">$320,000.00</p>
+                    <div class="icons">
+                      <a class="fa fa-regular fa-heart"></a>
+                      <a class="fas fa-regular fa-arrow-right-arrow-left"></a>
                     </div>
-                  </figcaption>
-                </figure>
-                <div class="property-data" data-aos="fade-up">
-                  <p class="city-name txt-silver">
-                    <i class="fa fa-thin fa-location-dot"></i> Beverly Hills, CA
-                  </p>
-                  <p class="property__address">
+                  </div>
+                </figcaption>
+              </figure>
+              <div class="property-data">
+                <p class="city-name txt-silver">
+                  <a href="javascript:void(0)">
+                    <i class="fa fa-thin fa-location-dot"></i> Beverly Hills,
+                    CA</a
+                  >
+                </p>
+                <p class="property__address">
+                  <a href="javascript:void(0)">
                     272 S Rexford Dr, Beverly Hills, CA<br />
-                    90212, USA
-                  </p>
-                  <p class="ownr-name">
+                    90212, USA</a
+                  >
+                </p>
+                <p class="ownr-name">
+                  <a href="javascript:void(0)">
                     <img
                       src="images/agent-1-3-60-x-60.png"
                       alt="agent-pic"
                     />
-                    Helen Mattis
+                    Helen Mattis</a
+                  >
+                </p>
+                <span class="month-old txt-silver">4 months ago</span>
+                <hr />
+                <div class="prop-info">
+                  <p class="prop-size">
+                    <img src="images/area-icon_2.svg" />
+                    <b class="bold">2400</b> Sq Ft
                   </p>
-                  <span class="month-old txt-silver">4 months ago</span>
-                  <hr />
-                  <div class="prop-info">
-                    <p class="prop-size">
-                      <img src="images/area-icon_2.svg" />
-                      <b class="bold">2400</b> Sq Ft
-                    </p>
-                    <p class="prop-room">
-                      <img src="images/garage-icon_2.svg" /><span>2</span>
-                      <img src="images/bathroom-icon_2.svg" /><span
-                        >3</span
-                      >
-                      <img src="images/bathroom-icon_2.svg" /><span
-                        >3</span
-                      >
-                    </p>
-                  </div>
+                  <p class="prop-room">
+                    <img src="images/garage-icon_2.svg" /><span>2</span>
+                    <img src="images/bathroom-icon_2.svg" /><span>3</span>
+                    <img src="images/bathroom-icon_2.svg" /><span>3</span>
+                  </p>
                 </div>
-              </a>
+              </div>
             </li>
           </ul>
           <ul class="properties-container more-properties flex">
             <li class="property">
-              <a href="javascript:void(0)">
-                <figure>
-                  <picture>
-                    <!-- <source
+              <figure>
+                <picture>
+                  <!-- <source
                       srcset="
                         /src/images/property-image_6.png    1x,
                         /src/images/property-image_6@2x.png 2x
                       "
                     /> -->
-                    <img
-                      src="images/property-image_6.png"
-                      alt="property-image"
-                    />
-                  </picture>
-                  <figcaption>
-                    <div class="caption-top">
-                      <div class="info">
-                        <p>HOUSE</p>
-                        <p>FOR SALE</p>
-                      </div>
-                      <p class="icons">
-                        <i class="fa fa-thin fa-bolt"></i>
-                      </p>
+                  <img
+                    src="images/property-image_6.png"
+                    alt="property-image"
+                  />
+                </picture>
+                <figcaption>
+                  <div class="caption-top">
+                    <div class="info">
+                      <p>HOUSE</p>
+                      <p>FOR SALE</p>
                     </div>
-                    <div class="caption-bottom">
-                      <p>$320,000.00</p>
-                      <div class="icons">
-                        <i class="fa fa-regular fa-heart"></i>
-                        <i class="fas fa-regular fa-arrow-right-arrow-left"></i>
-                      </div>
+                    <p class="icons">
+                      <i class="fa fa-thin fa-bolt"></i>
+                    </p>
+                  </div>
+                  <div class="caption-bottom">
+                    <p class="info">$320,000.00</p>
+                    <div class="icons">
+                      <a class="fa fa-regular fa-heart"></a>
+                      <a class="fas fa-regular fa-arrow-right-arrow-left"></a>
                     </div>
-                  </figcaption>
-                </figure>
-                <div class="property-data">
-                  <p class="city-name txt-silver">
-                    <i class="fa fa-thin fa-location-dot"></i> Beverly Hills, CA
-                  </p>
-                  <p class="property__address">
-                    272 S Rexford Dr, Beverly Hills, CA<br />
-                    90212, USA
-                  </p>
-                  <p class="ownr-name">
-                    <img
+                  </div>
+                </figcaption>
+              </figure>
+              <div class="property-data">
+                <p class="city-name txt-silver">
+                  <a href="javascript:void(0)"
+                    ><i class="fa fa-thin fa-location-dot"></i> Beverly Hills,
+                    CA</a
+                  >
+                </p>
+                <p class="property__address">
+                  <a
+                    >272 S Rexford Dr, Beverly Hills, CA<br />
+                    90212, USA</a
+                  >
+                </p>
+                <p class="ownr-name">
+                  <a href="javascript:void(0)"
+                    ><img
                       src="images/agent-1-3-60-x-60.png"
                       alt="agent-pic"
                     />
-                    Helen Mattis
+                    Helen Mattis</a
+                  >
+                </p>
+                <span class="month-old txt-silver">4 months ago</span>
+                <hr />
+                <div class="prop-info">
+                  <p class="prop-size">
+                    <img src="images/area-icon_2.svg" />
+                    <b class="bold">2400</b> Sq Ft
                   </p>
-                  <span class="month-old txt-silver">4 months ago</span>
-                  <hr />
-                  <div class="prop-info">
-                    <p class="prop-size">
-                      <img src="images/area-icon_2.svg" />
-                      <b class="bold">2400</b> Sq Ft
-                    </p>
-                    <p class="prop-room">
-                      <img src="images/garage-icon_2.svg" /><span>2</span>
-                      <img src="images/bathroom-icon_2.svg" /><span
-                        >3</span
-                      >
-                      <img src="images/bathroom-icon_2.svg" /><span
-                        >3</span
-                      >
-                    </p>
-                  </div>
+                  <p class="prop-room">
+                    <img src="images/garage-icon_2.svg" /><span>2</span>
+                    <img src="images/bathroom-icon_2.svg" /><span>3</span>
+                    <img src="images/bathroom-icon_2.svg" /><span>3</span>
+                  </p>
                 </div>
-              </a>
+              </div>
             </li>
             <li class="property">
-              <a href="javascript:void(0)">
-                <figure>
-                  <picture>
-                    <!-- <source
+              <figure>
+                <picture>
+                  <!-- <source
                       srcset="
                         /src/images/property-image_5.png    1x,
                         /src/images/property-image_5@2x.png 2x
                       "
                     /> -->
-                    <img
-                      src="images/property-image_5.png"
-                      alt="property-image"
-                    />
-                  </picture>
-                  <figcaption>
-                    <div class="caption-top">
-                      <div class="info">
-                        <p>HOUSE</p>
-                        <p>FOR SALE</p>
-                      </div>
-                      <p class="icons">
-                        <i class="fa fa-thin fa-bolt"></i>
-                      </p>
+                  <img
+                    src="images/property-image_5.png"
+                    alt="property-image"
+                  />
+                </picture>
+                <figcaption>
+                  <div class="caption-top">
+                    <div class="info">
+                      <p>HOUSE</p>
+                      <p>FOR SALE</p>
                     </div>
-                    <div class="caption-bottom">
-                      <p>$320,000.00</p>
-                      <div class="icons">
-                        <i class="fa fa-regular fa-heart"></i>
-                        <i class="fas fa-regular fa-arrow-right-arrow-left"></i>
-                      </div>
+                    <p class="icons">
+                      <i class="fa fa-thin fa-bolt"></i>
+                    </p>
+                  </div>
+                  <div class="caption-bottom">
+                    <p class="info">$320,000.00</p>
+                    <div class="icons">
+                      <a class="fa fa-regular fa-heart"></a>
+                      <a class="fas fa-regular fa-arrow-right-arrow-left"></a>
                     </div>
-                  </figcaption>
-                </figure>
-                <div class="property-data">
-                  <p class="city-name txt-silver">
-                    <i class="fa fa-thin fa-location-dot"></i> Beverly Hills, CA
-                  </p>
-                  <p class="property__address">
+                  </div>
+                </figcaption>
+              </figure>
+              <div class="property-data">
+                <p class="city-name txt-silver">
+                  <a href="javascript:void(0)"
+                    ><i class="fa fa-thin fa-location-dot"></i> Beverly Hills,
+                    CA</a
+                  >
+                </p>
+                <p class="property__address">
+                  <a href="javascript:void(0)">
                     272 S Rexford Dr, Beverly Hills, CA<br />
-                    90212, USA
-                  </p>
-                  <p class="ownr-name">
+                    90212, USA</a
+                  >
+                </p>
+                <p class="ownr-name">
+                  <a href="javascript:void(0)">
                     <img
                       src="images/agent-1-3-60-x-60.png"
                       alt="agent-pic"
                     />
-                    Helen Mattis
+                    Helen Mattis</a
+                  >
+                </p>
+                <span class="month-old txt-silver">4 months ago</span>
+                <hr />
+                <div class="prop-info">
+                  <p class="prop-size">
+                    <img src="images/area-icon_2.svg" />
+                    <b class="bold">2400</b> Sq Ft
                   </p>
-                  <span class="month-old txt-silver">4 months ago</span>
-                  <hr />
-                  <div class="prop-info">
-                    <p class="prop-size">
-                      <img src="images/area-icon_2.svg" />
-                      <b class="bold">2400</b> Sq Ft
-                    </p>
-                    <p class="prop-room">
-                      <img src="images/garage-icon_2.svg" /><span>2</span>
-                      <img src="images/bathroom-icon_2.svg" /><span
-                        >3</span
-                      >
-                      <img src="images/bathroom-icon_2.svg" /><span
-                        >3</span
-                      >
-                    </p>
-                  </div>
+                  <p class="prop-room">
+                    <img src="images/garage-icon_2.svg" /><span>2</span>
+                    <img src="images/bathroom-icon_2.svg" /><span>3</span>
+                    <img src="images/bathroom-icon_2.svg" /><span>3</span>
+                  </p>
                 </div>
-              </a>
+              </div>
             </li>
             <li class="property">
-              <a href="javascript:void(0)">
-                <figure>
-                  <picture>
-                    <!-- <source
+              <figure>
+                <picture>
+                  <!-- <source
                       srcset="
                         /src/images/property-image_4.png    1x,
-                        /src/images/property-image_4@2x.png 2x
+                        /src/images/property-image_4@2x.png 2x 
                       "
                     /> -->
-                    <img
-                      src="images/property-image_4.png"
-                      alt="property-image"
-                    />
-                  </picture>
-                  <figcaption>
-                    <div class="caption-top">
-                      <div class="info">
-                        <p>HOUSE</p>
-                        <p>FOR SALE</p>
-                      </div>
-                      <p class="icons">
-                        <i class="fa fa-thin fa-bolt"></i>
-                      </p>
+                  <img
+                    src="images/property-image_4.png"
+                    alt="property-image"
+                  />
+                </picture>
+                <figcaption>
+                  <div class="caption-top">
+                    <div class="info">
+                      <p>HOUSE</p>
+                      <p>FOR SALE</p>
                     </div>
-                    <div class="caption-bottom">
-                      <p>$320,000.00</p>
-                      <div class="icons">
-                        <i class="fa fa-regular fa-heart"></i>
-                        <i class="fas fa-regular fa-arrow-right-arrow-left"></i>
-                      </div>
+                    <p class="icons">
+                      <i class="fa fa-thin fa-bolt"></i>
+                    </p>
+                  </div>
+                  <div class="caption-bottom">
+                    <p class="info">$320,000.00</p>
+                    <div class="icons">
+                      <a class="fa fa-regular fa-heart"></a>
+                      <a class="fas fa-regular fa-arrow-right-arrow-left"></a>
                     </div>
-                  </figcaption>
-                </figure>
-                <div class="property-data">
-                  <p class="city-name txt-silver">
-                    <i class="fa fa-thin fa-location-dot"></i> Beverly Hills, CA
-                  </p>
-                  <p class="property__address">
+                  </div>
+                </figcaption>
+              </figure>
+              <div class="property-data">
+                <p class="city-name txt-silver">
+                  <a href="javascript:void(0)">
+                    <i class="fa fa-thin fa-location-dot"></i> Beverly Hills,
+                    CA</a
+                  >
+                </p>
+                <p class="property__address">
+                  <a href="javascript:void(0)">
                     272 S Rexford Dr, Beverly Hills, CA<br />
-                    90212, USA
-                  </p>
-                  <p class="ownr-name">
+                    90212, USA</a
+                  >
+                </p>
+                <p class="ownr-name">
+                  <a href="javascript:void(0)">
                     <img
                       src="images/agent-1-3-60-x-60.png"
                       alt="agent-pic"
                     />
-                    Helen Mattis
+                    Helen Mattis</a
+                  >
+                </p>
+                <span class="month-old txt-silver">4 months ago</span>
+                <hr />
+                <div class="prop-info">
+                  <p class="prop-size">
+                    <img src="images/area-icon_2.svg" />
+                    <b class="bold">2400</b> Sq Ft
                   </p>
-                  <span class="month-old txt-silver">4 months ago</span>
-                  <hr />
-                  <div class="prop-info">
-                    <p class="prop-size">
-                      <img src="images/area-icon_2.svg" />
-                      <b class="bold">2400</b> Sq Ft
-                    </p>
-                    <p class="prop-room">
-                      <img src="images/garage-icon_2.svg" /><span>2</span>
-                      <img src="images/bathroom-icon_2.svg" /><span
-                        >3</span
-                      >
-                      <img src="images/bathroom-icon_2.svg" /><span
-                        >3</span
-                      >
-                    </p>
-                  </div>
+                  <p class="prop-room">
+                    <img src="images/garage-icon_2.svg" /><span>2</span>
+                    <img src="images/bathroom-icon_2.svg" /><span>3</span>
+                    <img src="images/bathroom-icon_2.svg" /><span>3</span>
+                  </p>
                 </div>
-              </a>
+              </div>
             </li>
             <li class="property">
-              <a href="javascript:void(0)">
-                <figure>
-                  <picture>
-                    <!-- <source
+              <figure>
+                <picture>
+                  <!-- <source
                       srcset="
                         /src/images/property-image_3.png    1x,
                         /src/images/property-image_3@2x.png 2x
                       "
                     /> -->
-                    <img
-                      src="images/property-image_3.png"
-                      alt="property-image"
-                    />
-                  </picture>
-                  <figcaption>
-                    <div class="caption-top">
-                      <div class="info">
-                        <p>HOUSE</p>
-                        <p>FOR SALE</p>
-                      </div>
-                      <p class="icons">
-                        <i class="fa fa-thin fa-bolt"></i>
-                      </p>
+                  <img
+                    src="images/property-image_3.png"
+                    alt="property-image"
+                  />
+                </picture>
+                <figcaption>
+                  <div class="caption-top">
+                    <div class="info">
+                      <p>HOUSE</p>
+                      <p>FOR SALE</p>
                     </div>
-                    <div class="caption-bottom">
-                      <p>$320,000.00</p>
-                      <div class="icons">
-                        <i class="fa fa-regular fa-heart"></i>
-                        <i class="fas fa-regular fa-arrow-right-arrow-left"></i>
-                      </div>
+                    <p class="icons">
+                      <i class="fa fa-thin fa-bolt"></i>
+                    </p>
+                  </div>
+                  <div class="caption-bottom">
+                    <p class="info">$320,000.00</p>
+                    <div class="icons">
+                      <a class="fa fa-regular fa-heart"></a>
+                      <a class="fas fa-regular fa-arrow-right-arrow-left"></a>
                     </div>
-                  </figcaption>
-                </figure>
-                <div class="property-data">
-                  <p class="city-name txt-silver">
-                    <i class="fa fa-thin fa-location-dot"></i> Beverly Hills, CA
-                  </p>
-                  <p class="property__address">
+                  </div>
+                </figcaption>
+              </figure>
+              <div class="property-data">
+                <p class="city-name txt-silver">
+                  <a href="javascript:void(0)">
+                    <i class="fa fa-thin fa-location-dot"></i> Beverly Hills,
+                    CA</a
+                  >
+                </p>
+                <p class="property__address">
+                  <a href="javascript:void(0)">
                     272 S Rexford Dr, Beverly Hills, CA<br />
-                    90212, USA
-                  </p>
-                  <p class="ownr-name">
+                    90212, USA</a
+                  >
+                </p>
+                <p class="ownr-name">
+                  <a href="javascript:void(0)">
                     <img
                       src="images/agent-1-3-60-x-60.png"
                       alt="agent-pic"
                     />
-                    Helen Mattis
+                    Helen Mattis</a
+                  >
+                </p>
+                <span class="month-old txt-silver">4 months ago</span>
+                <hr />
+                <div class="prop-info">
+                  <p class="prop-size">
+                    <img src="images/area-icon_2.svg" />
+                    <b class="bold">2400</b> Sq Ft
                   </p>
-                  <span class="month-old txt-silver">4 months ago</span>
-                  <hr />
-                  <div class="prop-info">
-                    <p class="prop-size">
-                      <img src="images/area-icon_2.svg" />
-                      <b class="bold">2400</b> Sq Ft
-                    </p>
-                    <p class="prop-room">
-                      <img src="images/garage-icon_2.svg" /><span>2</span>
-                      <img src="images/bathroom-icon_2.svg" /><span
-                        >3</span
-                      >
-                      <img src="images/bathroom-icon_2.svg" /><span
-                        >3</span
-                      >
-                    </p>
-                  </div>
+                  <p class="prop-room">
+                    <img src="images/garage-icon_2.svg" /><span>2</span>
+                    <img src="images/bathroom-icon_2.svg" /><span>3</span>
+                    <img src="images/bathroom-icon_2.svg" /><span>3</span>
+                  </p>
                 </div>
-              </a>
+              </div>
             </li>
             <li class="property">
-              <a href="javascript:void(0)">
-                <figure>
-                  <picture>
-                    <!-- <source
+              <figure>
+                <picture>
+                  <!-- <source
                       srcset="
                         /src/images/property-image_2.png    1x,
                         /src/images/property-image_2@2x.png 2x
                       "
                     /> -->
-                    <img
-                      src="images/property-image_2.png"
-                      alt="property-image"
-                    />
-                  </picture>
-                  <figcaption>
-                    <div class="caption-top">
-                      <div class="info">
-                        <p>HOUSE</p>
-                        <p>FOR SALE</p>
-                      </div>
-                      <p class="icons">
-                        <i class="fa fa-thin fa-bolt"></i>
-                      </p>
+                  <img
+                    src="images/property-image_2.png"
+                    alt="property-image"
+                  />
+                </picture>
+                <figcaption>
+                  <div class="caption-top">
+                    <div class="info">
+                      <p>HOUSE</p>
+                      <p>FOR SALE</p>
                     </div>
-                    <div class="caption-bottom">
-                      <p>$320,000.00</p>
-                      <div class="icons">
-                        <i class="fa fa-regular fa-heart"></i>
-                        <i class="fas fa-regular fa-arrow-right-arrow-left"></i>
-                      </div>
+                    <p class="icons">
+                      <i class="fa fa-thin fa-bolt"></i>
+                    </p>
+                  </div>
+                  <div class="caption-bottom">
+                    <p class="info">$320,000.00</p>
+                    <div class="icons">
+                      <a class="fa fa-regular fa-heart"></a>
+                      <a class="fas fa-regular fa-arrow-right-arrow-left"></a>
                     </div>
-                  </figcaption>
-                </figure>
-                <div class="property-data">
-                  <p class="city-name txt-silver">
-                    <i class="fa fa-thin fa-location-dot"></i> Beverly Hills, CA
-                  </p>
-                  <p class="property__address">
+                  </div>
+                </figcaption>
+              </figure>
+              <div class="property-data">
+                <p class="city-name txt-silver">
+                  <a href="javascript:void(0)">
+                    <i class="fa fa-thin fa-location-dot"></i> Beverly Hills,
+                    CA</a
+                  >
+                </p>
+                <p class="property__address">
+                  <a href="javascript:void(0)">
                     272 S Rexford Dr, Beverly Hills, CA<br />
-                    90212, USA
-                  </p>
-                  <p class="ownr-name">
+                    90212, USA</a
+                  >
+                </p>
+                <p class="ownr-name">
+                  <a href="javascript:void(0)">
                     <img
                       src="images/agent-1-3-60-x-60.png"
                       alt="agent-pic"
                     />
-                    Helen Mattis
+                    Helen Mattis</a
+                  >
+                </p>
+                <span class="month-old txt-silver">4 months ago</span>
+                <hr />
+                <div class="prop-info">
+                  <p class="prop-size">
+                    <img src="images/area-icon_2.svg" />
+                    <b class="bold">2400</b> Sq Ft
                   </p>
-                  <span class="month-old txt-silver">4 months ago</span>
-                  <hr />
-                  <div class="prop-info">
-                    <p class="prop-size">
-                      <img src="images/area-icon_2.svg" />
-                      <b class="bold">2400</b> Sq Ft
-                    </p>
-                    <p class="prop-room">
-                      <img src="images/garage-icon_2.svg" /><span>2</span>
-                      <img src="images/bathroom-icon_2.svg" /><span
-                        >3</span
-                      >
-                      <img src="images/bathroom-icon_2.svg" /><span
-                        >3</span
-                      >
-                    </p>
-                  </div>
+                  <p class="prop-room">
+                    <img src="images/garage-icon_2.svg" /><span>2</span>
+                    <img src="images/bathroom-icon_2.svg" /><span>3</span>
+                    <img src="images/bathroom-icon_2.svg" /><span>3</span>
+                  </p>
                 </div>
-              </a>
+              </div>
             </li>
             <li class="property">
-              <a href="javascript:void(0)">
-                <figure>
-                  <picture>
-                    <!-- <source
+              <figure>
+                <picture>
+                  <!-- <source
                       srcset="
                         /src/images/property-image.png    1x,
                         /src/images/property-image@2x.png 2x
                       "
                     /> -->
-                    <img
-                      src="images/property-image.png"
-                      alt="property-image"
-                    />
-                  </picture>
-                  <figcaption>
-                    <div class="caption-top">
-                      <div class="info">
-                        <p>HOUSE</p>
-                        <p>FOR SALE</p>
-                      </div>
-                      <p class="icons">
-                        <i class="fa fa-thin fa-bolt"></i>
-                      </p>
+                  <img
+                    src="images/property-image.png"
+                    alt="property-image"
+                  />
+                </picture>
+                <figcaption>
+                  <div class="caption-top">
+                    <div class="info">
+                      <p>HOUSE</p>
+                      <p>FOR SALE</p>
                     </div>
-                    <div class="caption-bottom">
-                      <p>$320,000.00</p>
-                      <div class="icons">
-                        <i class="fa fa-regular fa-heart"></i>
-                        <i class="fas fa-regular fa-arrow-right-arrow-left"></i>
-                      </div>
+                    <p class="icons">
+                      <i class="fa fa-thin fa-bolt"></i>
+                    </p>
+                  </div>
+                  <div class="caption-bottom">
+                    <p class="info">$320,000.00</p>
+                    <div class="icons">
+                      <a class="fa fa-regular fa-heart"></a>
+                      <a class="fas fa-regular fa-arrow-right-arrow-left"></a>
                     </div>
-                  </figcaption>
-                </figure>
-                <div class="property-data">
-                  <p class="city-name txt-silver">
-                    <i class="fa fa-thin fa-location-dot"></i> Beverly Hills, CA
-                  </p>
-                  <p class="property__address">
+                  </div>
+                </figcaption>
+              </figure>
+              <div class="property-data">
+                <p class="city-name txt-silver">
+                  <a href="javascript:void(0)">
+                    <i class="fa fa-thin fa-location-dot"></i> Beverly Hills,
+                    CA</a
+                  >
+                </p>
+                <p class="property__address">
+                  <a href="javascript:void(0)">
                     272 S Rexford Dr, Beverly Hills, CA<br />
-                    90212, USA
-                  </p>
-                  <p class="ownr-name">
+                    90212, USA</a
+                  >
+                </p>
+                <p class="ownr-name">
+                  <a href="javascript:void(0)">
                     <img
                       src="images/agent-1-3-60-x-60.png"
                       alt="agent-pic"
                     />
-                    Helen Mattis
+                    Helen Mattis</a
+                  >
+                </p>
+                <span class="month-old txt-silver">4 months ago</span>
+                <hr />
+                <div class="prop-info">
+                  <p class="prop-size">
+                    <img src="images/area-icon_2.svg" />
+                    <b class="bold">2400</b> Sq Ft
                   </p>
-                  <span class="month-old txt-silver">4 months ago</span>
-                  <hr />
-                  <div class="prop-info">
-                    <p class="prop-size">
-                      <img src="images/area-icon_2.svg" />
-                      <b class="bold">2400</b> Sq Ft
-                    </p>
-                    <p class="prop-room">
-                      <img src="images/garage-icon_2.svg" /><span>2</span>
-                      <img src="images/bathroom-icon_2.svg" /><span
-                        >3</span
-                      >
-                      <img src="images/bathroom-icon_2.svg" /><span
-                        >3</span
-                      >
-                    </p>
-                  </div>
+                  <p class="prop-room">
+                    <img src="images/garage-icon_2.svg" /><span>2</span>
+                    <img src="images/bathroom-icon_2.svg" /><span>3</span>
+                    <img src="images/bathroom-icon_2.svg" /><span>3</span>
+                  </p>
                 </div>
-              </a>
+              </div>
             </li>
           </ul>
+
           <div class="btn-wrapper">
             <button class="btn black-btn futr-proprty">All Properties</button>
           </div>
@@ -979,8 +1055,8 @@
       </section>
       <section class="hot-deals py-main" id="hot-deal-sec">
         <div class="container">
-          <p class="title-txt mb-tt">CASAROYAL REAL ESTATE AGENCY</p>
-          <h2 class="title-lg mb-title" data-aos="fade-up">
+          <p class="title-txt mb-tt reveal">CASAROYAL REAL ESTATE AGENCY</p>
+          <h2 class="title-lg mb-title reveal">
             <span class="bold">Hot</span> Deal
           </h2>
           <div class="deal">
@@ -993,15 +1069,17 @@
                 "
               /> -->
                 <img
-                  src="images/isaac-benhesed-249429-unsplash-1.png"
+                  src="https://via.placeholder.com/450?text=Loading"
+                  data-src="/images/isaac-benhesed-249429-unsplash-1.png"
                   alt="hot-deal-img"
+                  class="lazy"
                 />
               </picture>
               <figcaption>
                 <a href="javascript:void(0)">Photos (4)</a>
               </figcaption>
             </figure>
-            <article>
+            <article class="flex">
               <p class="deals-text">Residential Towe For Rent</p>
               <h4 class="deals-title">15 Apartments of Type B</h4>
               <p class="deals-text">
@@ -1010,15 +1088,12 @@
               <a href="javascript:void(0)" class="btn orange-btn"
                 >From <span class="bold">$1,700.00</span> Per Month</a
               >
-              <a
-                href="javascript:void(0)"
-                class="fa-regular fa-circle-play"
-              ></a>
+              <button class="fa-regular fa-circle-play fa-shake"></button>
               <div class="deal-video">
                 <video id="video" controls>
                   <source src="images/video.webm" />
                 </video>
-                <a class="fa-regular fa-x fa-2x"></a>
+                <button class="close">Close Me</button>
               </div>
               <ul class="info-icons">
                 <li>
@@ -1048,18 +1123,20 @@
       </section>
       <section class="areas py-main" id="Area-sec">
         <div class="container">
-          <p class="title-txt mb-tt">CASAROYAL REAL ESTATE AGENCY</p>
-          <h2 class="title-lg mb-title" data-aos="fade-up">
+          <p class="title-txt mb-tt reveal">CASAROYAL REAL ESTATE AGENCY</p>
+          <h2 class="title-lg mb-title reveal">
             <span class="bold">Properties</span> by Area
           </h2>
           <ul>
-            <li data-aos="fade-up">
+            <li>
               <a href="javascript:void(0)">
                 <figure>
                   <img
-                    src="images/los-angeles.png"
+                    src="
+                    https://via.placeholder.com/450?text=Loading"
+                    data-src="/images/los-angeles.png "
                     alt="los-angeles"
-                    class="wd"
+                    class="wd lazy"
                   />
                   <figcaption>
                     <p>Los Angeles</p>
@@ -1072,12 +1149,14 @@
               </a>
             </li>
 
-            <li data-aos="fade-up">
+            <li>
               <figure>
                 <a href="javascript:void(0)"
                   ><img
-                    src="images/san-francisco.png"
+                    src="https://via.placeholder.com/450?text=Loading"
+                    data-src="/images/san-francisco.png"
                     alt="san-francisco"
+                    class="lazy"
                   />
                 </a>
                 <figcaption>
@@ -1089,10 +1168,15 @@
                 </figcaption>
               </figure>
             </li>
-            <li data-aos="fade-up">
+            <li>
               <figure>
                 <a href="javascript:void(0)"
-                  ><img src="images/seattle.png" alt="seattle" />
+                  ><img
+                    src="https://via.placeholder.com/450?text=Loading"
+                    data-src="/images/seattle.png"
+                    alt="seattle"
+                    class="lazy"
+                  />
                 </a>
                 <figcaption>
                   <p>Seattle</p>
@@ -1103,13 +1187,14 @@
                 </figcaption>
               </figure>
             </li>
-            <li data-aos="fade-up">
+            <li>
               <figure>
                 <a href="javascript:void(0)"
                   ><img
-                    src="images/san-diego.png"
+                    src="https://via.placeholder.com/450?text=Loading"
+                    data-src="/images/san-diego.png"
                     alt="san-diego"
-                    class="wd"
+                    class="wd lazy"
                   />
                 </a>
                 <figcaption>
@@ -1126,14 +1211,22 @@
       </section>
       <section class="agents py-main" id="agents-sec">
         <div class="container">
-          <p class="title-txt mb-tt">Meet Our Team</p>
-          <h2 class="title-lg mb-title" data-aos="fade-up">
+          <p class="title-txt mb-tt reveal">Meet Our Team</p>
+          <h2 class="title-lg mb-title reveal">
             <span class="bold">Our</span> Agents
           </h2>
           <div class="swiper mySwiper">
             <ul class="agents-wrapper flex swiper-wrapper">
               <li class="agent swiper-slide">
-                <img src="images/agent-image_3.png" alt="agent-pic" />
+                <figure>
+                <img
+                  src="https://via.placeholder.com/450?text=Loading"
+                  data-src="/images/agent-image_3.png"
+                  alt="agent-pic"
+                  class="lazy"
+                />
+              </figure>
+              <article>
                 <p class="agent-info">Real Estate Broker</p>
                 <p class="text-xl">JOHN DOE</p>
                 <p class="agent-info contact-info">
@@ -1153,9 +1246,17 @@
                     class="fa-brands fa-linkedin-in"
                   ></a>
                 </div>
+              </article>
               </li>
               <li class="agent swiper-slide">
-                <img src="images/agent-image_2.png" alt="agent-pic" />
+                <figure>
+                <img
+                  src="https://via.placeholder.com/450?text=Loading"
+                  data-src="/images/agent-image_2.png"
+                  alt="agent-pic"
+                  class="lazy"
+                /></figure>
+                <article>
                 <p class="agent-info">Real Estate Broker</p>
                 <p class="text-xl">JANE DOE</p>
                 <p class="agent-info contact-info">
@@ -1175,9 +1276,17 @@
                     class="fa-brands fa-linkedin-in"
                   ></a>
                 </div>
+              </article>
               </li>
               <li class="agent swiper-slide">
-                <img src="images/agent-image.png" alt="agent-pic" />
+                <figure>
+                <img
+                  src="https://via.placeholder.com/450?text=Loading"
+                  data-src="/images/agent-image.png"
+                  alt="agent-pic"
+                  class="lazy"
+                /></figure>
+                <article>
                 <p class="agent-info">Real Estate Broker</p>
                 <p class="text-xl">JOHN DOE</p>
                 <p class="agent-info contact-info">
@@ -1197,9 +1306,17 @@
                     class="fa-brands fa-linkedin-in"
                   ></a>
                 </div>
+              </article>
               </li>
               <li class="agent swiper-slide">
-                <img src="images/agent-image_3.png" alt="agent-pic" />
+                <figure>
+                <img
+                  src="https://via.placeholder.com/450?text=Loading"
+                  data-src="/images/agent-image_3.png"
+                  alt="agent-pic"
+                  class="lazy"
+                /></figure>
+                <article>
                 <p class="agent-info">Real Estate Broker</p>
                 <p class="text-xl">JOHN DOE</p>
                 <p class="agent-info contact-info">
@@ -1219,9 +1336,17 @@
                     class="fa-brands fa-linkedin-in"
                   ></a>
                 </div>
+              </article>
               </li>
               <li class="agent swiper-slide">
-                <img src="images/agent-image_2.png" alt="agent-pic" />
+                <figure>
+                <img
+                  src="https://via.placeholder.com/450?text=Loading"
+                  data-src="/images/agent-image_2.png"
+                  alt="agent-pic"
+                  class="lazy"
+                /></figure>
+                <article>
                 <p class="agent-info">Real Estate Broker</p>
                 <p class="text-xl">JANE DOE</p>
                 <p class="agent-info contact-info">
@@ -1241,9 +1366,17 @@
                     class="fa-brands fa-linkedin-in"
                   ></a>
                 </div>
+              </article>
               </li>
               <li class="agent swiper-slide">
-                <img src="images/agent-image.png" alt="agent-pic" />
+                <figure>
+                <img
+                  src="https://via.placeholder.com/450?text=Loading"
+                  data-src="/images/agent-image.png"
+                  alt="agent-pic"
+                  class="lazy"
+                /></figure>
+                <article>
                 <p class="agent-info">Real Estate Broker</p>
                 <p class="text-xl">JOHN DOE</p>
                 <p class="agent-info contact-info">
@@ -1263,7 +1396,8 @@
                     class="fa-brands fa-linkedin-in"
                   ></a>
                 </div>
-              </li>
+              </article>
+              </li> 
             </ul>
             <div class="swiper-pagination"></div>
           </div>
@@ -1272,15 +1406,12 @@
       <section class="sell-property py-main">
         <div class="container">
           <article>
-            <h2 data-aos="fade-up">Want to Sell Property?</h2>
-            <p data-aos="fade-up">
+            <h2 class="reveal">Want to Sell Property?</h2>
+            <p class="reveal">
               Let us create a tailored strategic marketing plan and keep track
               of the selling process.
             </p>
-            <a
-              href="javascript:void(0)"
-              class="btn black-btn"
-              data-aos="fade-up"
+            <a href="javascript:void(0)" class="btn black-btn reveal"
               >More Details <i>></i></a
             >
           </article>
@@ -1288,8 +1419,8 @@
       </section>
       <section class="our-agencies py-main" id="agency-sec">
         <div class="container">
-          <p class="title-txt mb-tt">Meet Our Team</p>
-          <h2 class="title-lg mb-title" data-aos="fade-up">
+          <p class="title-txt mb-tt reveal">Meet Our Team</p>
+          <h2 class="title-lg mb-title reveal">
             <span class="bold">Real Estate</span> Agiencies
           </h2>
           <ul class="flex">
@@ -1313,7 +1444,9 @@
                   >agent@gmail.com</a
                 >
               </p>
-              <p class="proprty-numbr">3 Properties</p>
+              <a href="javascript:void(0)" class="proprty-numbr"
+                >3 Properties</a
+              >
             </li>
             <li>
               <div class="ratings">
@@ -1335,7 +1468,9 @@
                   >agent@gmail.com</a
                 >
               </p>
-              <p class="proprty-numbr">3 Properties</p>
+              <a href="javascript:void(0)" class="proprty-numbr"
+                >3 Properties</a
+              >
             </li>
             <li>
               <div class="ratings">
@@ -1357,22 +1492,29 @@
                   >agent@gmail.com</a
                 >
               </p>
-              <p class="proprty-numbr">3 Properties</p>
+              <a href="javascript:void(0)" class="proprty-numbr"
+                >3 Properties</a
+              >
             </li>
           </ul>
         </div>
       </section>
       <section class="articles py-main" id="article-sec">
         <div class="container">
-          <p class="title-txt mb-tt">Casaroyal News</p>
-          <h2 class="title-lg mb-title" data-aos="fade-up">
+          <p class="title-txt mb-tt reveal">Casaroyal News</p>
+          <h2 class="title-lg mb-title reveal">
             <span class="bold">Articles</span> & Tips
           </h2>
           <ul class="flex">
             <li>
               <a href="javascript:void(0)">
                 <picture>
-                  <img src="images/image_3.png" alt="article-pic" />
+                  <img
+                    src="https://via.placeholder.com/450?text=Loading"
+                    data-src="/images/image_3.png"
+                    alt="article-pic"
+                    class="lazy"
+                  />
                 </picture>
                 <article>
                   <p class="category">Category</p>
@@ -1386,7 +1528,12 @@
             <li>
               <a href="javascript:void(0)">
                 <picture>
-                  <img src="images/image_2.png" alt="article-pic" />
+                  <img
+                    src="https://via.placeholder.com/450?text=Loading"
+                    data-src="/images/image_2.png"
+                    alt="article-pic"
+                    class="lazy"
+                  />
                 </picture>
                 <article>
                   <p class="category">Category</p>
@@ -1402,7 +1549,12 @@
             <li>
               <a href="javascript:void(0)">
                 <picture>
-                  <img src="images/image.png" alt="article-pic" />
+                  <img
+                    src="https://via.placeholder.com/450?text=Loading"
+                    data-src="/images/image.png"
+                    alt="article-pic"
+                    class="lazy"
+                  />
                 </picture>
                 <article>
                   <p class="category">Category</p>
@@ -1421,8 +1573,8 @@
       </section>
       <section class="our-values py-main" id="values-sec">
         <div class="container">
-          <p class="title-txt mb-tt">Casaroyal Real Estate Agency</p>
-          <h2 class="title-lg mb-title" data-aos="fade-up">
+          <p class="title-txt mb-tt reveal">Casaroyal Real Estate Agency</p>
+          <h2 class="title-lg mb-title reveal">
             <span class="bold">Our</span> Values
           </h2>
           <ul class="flex">
@@ -1467,30 +1619,126 @@
       </section>
       <section class="reviews" id="reviews-sec">
         <div class="container">
-          <p class="text-top">Client Reviews</p>
-          <h2 class="review__title" data-aos="fade-up">
+          <p class="text-top reveal">Client Reviews</p>
+          <h2 class="review__title reveal">
             <span class="bold">What</span> Our Clients Say
           </h2>
-          <ul>
-            <li class="review">
-              <p class="review__text" data-aos="fade-up">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                eleifend nunc sem, sit amet luctus tellus tempus tempor.
-                Interdum et malesuada fames ac ante ipsum primis in faucibus.
-              </p>
-              <div class="cx" data-aos="fade-up">
-                <img
-                  src="images/agent-image_2.png"
-                  alt="cx-img"
-                  class="cx-img"
-                />
-                <div class="cx-info">
-                  <p class="review__name">Alan Poe</p>
-                  <p class="review__city">San-Francisco</p>
+          <div id="slider" class="swipe">
+            <ul class="review-slider" id="review-slider">
+              <li class="review reveal card">
+                <p class="review__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam eleifend nunc sem, sit amet luctus tellus tempus
+                  tempor. Interdum et malesuada fames ac ante ipsum primis in
+                  faucibus.
+                </p>
+                <div class="cx">
+                  <img
+                    src="images/agent-image_2.png"
+                    alt="cx-img"
+                    class="cx-img"
+                  />
+                  <div class="cx-info">
+                    <p class="review__name">Alan Poe</p>
+                    <p class="review__city">France</p>
+                  </div>
                 </div>
-              </div>
-            </li>
-          </ul>
+              </li>
+              <li class="review">
+                <p class="review__text">
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text. It has roots in a piece of classical Latin literature
+                  from 45 BC.
+                </p>
+                <div class="cx">
+                  <img
+                    src="images/agent-image_3.png"
+                    alt="cx-img"
+                    class="cx-img"
+                  />
+                  <div class="cx-info">
+                    <p class="review__name">Jackie Tow</p>
+                    <p class="review__city">San-Francisco</p>
+                  </div>
+                </div>
+              </li>
+              <li class="review">
+                <p class="review__text">
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected humour, or randomised words which don't look
+                  even.
+                </p>
+                <div class="cx">
+                  <img
+                    src="images/agent-image.png"
+                    alt="cx-img"
+                    class="cx-img"
+                  />
+                  <div class="cx-info">
+                    <p class="review__name">Charlotte</p>
+                    <p class="review__city">Newyork</p>
+                  </div>
+                </div>
+              </li>
+              <li class="review">
+                <p class="review__text">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal
+                </p>
+                <div class="cx">
+                  <img
+                    src="images/agent-image_3.png"
+                    alt="cx-img"
+                    class="cx-img"
+                  />
+                  <div class="cx-info">
+                    <p class="review__name">Evelyn</p>
+                    <p class="review__city">Mexico</p>
+                  </div>
+                </div>
+              </li>
+              <li class="review">
+                <p class="review__text">
+                  The standard chunk of Lorem Ipsum used since the 1500s is
+                  reproduced below for those interested. Sections 1.10.32 and
+                  1.10.33 from "de Finibus Bonorum et Malorum.
+                </p>
+                <div class="cx">
+                  <img
+                    src="images/agent-image_2.png"
+                    alt="cx-img"
+                    class="cx-img"
+                  />
+                  <div class="cx-info">
+                    <p class="review__name">Sophia</p>
+                    <p class="review__city">London</p>
+                  </div>
+                </div>
+              </li>
+              <li class="review">
+                <p class="review__text">
+                  the 1960s with the release of Letraset sheets containing Lorem
+                  Ipsum passages, and more recently with desktop publishing
+                  software like Aldus PageMaker including versions of Lorem
+                  Ipsum.
+                </p>
+                <div class="cx">
+                  <img
+                    src="images/agent-image_3.png"
+                    alt="cx-img"
+                    class="cx-img"
+                  />
+                  <div class="cx-info">
+                    <p class="review__name">Grace</p>
+                    <p class="review__city">California</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
           <div class="btns">
             <button class="bk-btn arrow-btn" onclick="prev()">&lt;</button>
             <button class="fr-btn arrow-btn" onclick="next()">></button>
@@ -1564,7 +1812,6 @@
         </div>
       </div>
     </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script defer src="index.js"></script></body>
 </html>

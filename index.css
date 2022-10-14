@@ -88,6 +88,17 @@ html {
   scroll-behavior: smooth;
 }
 
+.reveal {
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 .container {
   max-width: 1254px;
   margin: 0 auto;
@@ -131,6 +142,7 @@ picture img {
 }
 .fa-heart:hover {
   color: red;
+  font-weight: 700;
 }
 
 .fa-brands {
@@ -504,14 +516,8 @@ body {
   background: url(images/hero-bg-image.png) no-repeat center/cover;
   background: image-set(url(images/hero-bg-image.png) 1x, url(images/hero-bg-image@2x.png) 2x) no-repeat center/cover;
   min-height: 750px;
-  position: relative;
-}
-.hero .container {
-  max-width: 1400px;
-}
-.hero article {
-  display: inline-block;
-  margin-top: 200px;
+  display: flex;
+  align-items: center;
 }
 .hero .hero__title {
   font-size: 42px;
@@ -537,45 +543,58 @@ form input {
   margin-bottom: 40px;
 }
 form .form__dropdown {
+  position: relative;
   margin-bottom: 30px;
-}
-form .select-option {
-  border-radius: 4px;
   max-width: 274px;
-  padding: 4px 10px;
-  background-color: #ececec;
+  cursor: pointer;
 }
-form .select-option span {
+form .form__dropdown span {
   font-size: 14px;
   color: #9b9b9b;
+  position: absolute;
+  top: 4px;
+  left: 12px;
+}
+form .form__dropdown .fa-angle-down {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  transition: 0.3s ease;
+}
+form .selected {
+  border-radius: 4px;
+  padding: 26px 10px 5px 10px;
+  background-color: #ececec;
+  height: 100%;
+}
+form > .selected {
+  padding: 16px 10px 15px 10px;
 }
 form .type {
   font-size: 16px;
   color: #232628;
   font-weight: 600;
-  margin-top: 5px;
-  cursor: pointer;
-}
-form .type .fa-angle-down {
-  float: right;
 }
 form .options {
   position: absolute;
   background-color: #ececec;
   border-radius: 4px;
+  width: 100%;
   visibility: hidden;
   opacity: 0;
-  left: 0;
-  right: 181px;
-  transition: 0.3s ease-in-out;
+  transition: 0.3s ease;
+  z-index: 50;
 }
-form .options li {
-  padding: 20px;
+form .option {
+  padding: 17px;
   border-bottom: 1px solid lightgray;
 }
-form .options.show {
+form .options.active {
   visibility: visible;
   opacity: 1;
+}
+form .options.active + .fa-angle-down {
+  transform: rotate(180deg);
 }
 @media only screen and (min-width: 760px) {
   form {
@@ -594,10 +613,10 @@ form .options.show {
   }
 }
 @media only screen and (min-width: 760px) {
-  form .form__dropdown .select-option {
+  form .form__dropdown .selected {
     min-width: 274px;
   }
-  form > .select-option {
+  form > .selected {
     min-width: 450px;
   }
 }
@@ -751,13 +770,17 @@ form .options.show {
 .featured figure {
   position: relative;
 }
-.featured .caption-top .info,
-.featured .caption-top .icons {
+.featured .caption-top,
+.featured .caption-bottom {
   position: absolute;
-  top: 18px;
+  width: 100%;
+  padding: 0 20px;
 }
-.featured .caption-top .info {
-  left: 24px;
+.featured .info {
+  float: left;
+}
+.featured .caption-top {
+  top: 20px;
 }
 .featured .caption-top .info p:nth-child(2) {
   background-color: #ff5e15;
@@ -770,13 +793,9 @@ form .options.show {
   color: white;
   font-size: 12px;
   font-weight: 500;
+  text-transform: uppercase;
 }
-.featured .caption-top .icons {
-  right: 24px;
-}
-.featured .caption-bottom p,
-.featured .caption-bottom .icons {
-  position: absolute;
+.featured .caption-bottom {
   bottom: 20px;
 }
 .featured .caption-bottom p {
@@ -788,15 +807,24 @@ form .options.show {
   font-size: 15px;
   font-weight: 600;
 }
-.featured .caption-bottom .icons {
-  right: 24px;
-}
 .featured .caption-bottom .fa-heart,
 .featured .caption-bottom .fa-arrow-right-arrow-left {
   background-color: black;
   padding: 8px;
   color: #ffffff;
   border-radius: 4px;
+}
+.featured .caption-bottom .fa-heart:hover {
+  color: red;
+}
+.featured .caption-bottom .fa-arrow-right-arrow-left {
+  transition: 0.3s ease;
+}
+.featured .caption-bottom .fa-arrow-right-arrow-left:hover {
+  color: green;
+}
+.featured .icons {
+  float: right;
 }
 .featured .property-data {
   padding: 20px;
@@ -821,8 +849,11 @@ form .options.show {
   margin-bottom: 22px;
 }
 .featured .ownr-name img {
-  vertical-align: middle;
+  vertical-align: top;
   margin-right: 6px;
+}
+.featured .ownr-name:hover {
+  font-weight: 600;
 }
 .featured .txt-silver {
   font-size: 14px;
@@ -891,29 +922,33 @@ form .options.show {
 .hot-deals article {
   position: relative;
   background-color: #292929;
-  text-align: center;
+  flex-direction: column;
   padding: 50px;
+  text-align: center;
 }
 .hot-deals .deal-video {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
-  width: 100%;
+  width: 98%;
   transform: translate(-50%, -50%);
   visibility: hidden;
   opacity: 0;
-  z-index: 99;
   transition: 0.4s ease-in-out;
+  z-index: 99;
 }
 .hot-deals .deal-video video {
   width: 100%;
   height: 100%;
   box-shadow: 0 0px 10px #111111;
 }
-.hot-deals .fa-x {
-  position: absolute;
-  right: 10px;
-  top: 10px;
+.hot-deals .close {
+  position: fixed;
+  right: 0;
+  top: -24px;
+  font-size: 20px;
+  color: white;
+  background-color: red;
 }
 .hot-deals .popup-video {
   visibility: visible;
@@ -942,20 +977,10 @@ form .options.show {
   font-size: 100px;
   display: block;
   margin: 60px 0;
-  animation: jump 0.5s ease-in infinite;
-  color: #9c47fc;
-  background: -webkit-linear-gradient(#356ad2, #ff5406);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-@keyframes jump {
-  50% {
-    transform: translateY(-10px);
-  }
+  color: #9b9b9b;
 }
 .hot-deals .info-icons {
   display: flex;
-  justify-content: space-between;
 }
 .hot-deals .info-icons span {
   display: inline-block;
@@ -979,10 +1004,19 @@ form .options.show {
     position: initial;
     padding: 18px 50px;
   }
+  .hot-deals .deal-video {
+    width: 80%;
+  }
   .hot-deals .info-icons span {
     margin-top: 0;
     margin-left: 10px;
     vertical-align: super;
+  }
+  .hot-deals li {
+    margin-right: 20px;
+  }
+  .hot-deals li:last-child {
+    margin-right: 0;
   }
 }
 
@@ -1034,10 +1068,10 @@ form .options.show {
     margin-bottom: 0;
   }
   .areas li:nth-child(3n+1) {
-    flex: 1 1 27%;
+    flex: 1 1 25%;
   }
   .areas li:nth-child(2), .areas li:nth-child(3) {
-    flex: 1 1 64%;
+    flex: 1 1 60%;
   }
 }
 
@@ -1049,8 +1083,11 @@ form .options.show {
   background-color: #ffffff;
   border-radius: 4px;
 }
-.agents img {
+.agents figure {
   margin-bottom: 28px;
+}
+.agents img {
+  display: block;
 }
 .agents .text-xl {
   margin-top: 16px;
@@ -1159,6 +1196,11 @@ form .options.show {
   padding: 12px 16px;
   border-radius: 3px;
   margin-top: 34px;
+  transition: 0.2s ease-out;
+}
+.our-agencies .proprty-numbr:hover {
+  background-color: #2842cd;
+  color: #ffffff;
 }
 @media only screen and (min-width: 760px) {
   .our-agencies ul {
@@ -1223,6 +1265,10 @@ form .options.show {
   }
   .articles li {
     flex: 0 0 32%;
+    transition: 0.2s ease-out;
+  }
+  .articles li:hover {
+    box-shadow: 0 0 10px #646464;
   }
 }
 
@@ -1286,6 +1332,13 @@ form .options.show {
   font-size: 56px;
   color: #ffffff;
   margin-bottom: 100px;
+}
+.reviews .review-slider {
+  display: flex;
+  overflow: hidden;
+}
+.reviews li {
+  flex: 0 0 100%;
 }
 .reviews .review__text {
   font-size: 22px;
