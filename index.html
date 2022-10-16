@@ -72,11 +72,11 @@
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero flex">
         <article class="container">
           <h1 class="hero__title">Let Us Guide You Home</h1>
           <p>Find the house of your dreams</p>
-          <form onsubmit="return false">
+          <form id="form">
             <div class="form__dropdown">
               <span>Type</span>
               <div class="selected">
@@ -137,7 +137,7 @@
                     id="penthouse"
                     name="category"
                   />
-                  <label for="penthouse" class="type">PentHouse</label>
+                  <label for="penthouse" class="type">Verified</label>
                 </div>
                 <div class="option">
                   <input
@@ -146,7 +146,7 @@
                     id="villa"
                     name="category"
                   />
-                  <label for="villa" class="type">Villa</label>
+                  <label for="villa" class="type">Non-verified</label>
                 </div>
                 <div class="option">
                   <input
@@ -155,7 +155,7 @@
                     id="8-Bhk"
                     name="category"
                   />
-                  <label for="8-Bhk" class="type">8 - Bhk</label>
+                  <label for="8-Bhk" class="type">Premium-Verified</label>
                 </div>
                 <div class="option">
                   <input
@@ -164,18 +164,19 @@
                     id="6-Bhk"
                     name="category"
                   />
-                  <label for="6-Bhk" class="type">6 - Bhk</label>
+                  <label for="6-Bhk" class="type">Premium- NonVerified</label>
                 </div>
               </div>
               <i class="fa-sharp fa-solid fa-angle-down"></i>
             </div>
 
             <input
-              class="selected"
+              class="input"
               type="text"
+              name="search"
               placeholder="Search for properties or keywords…"
             />
-            <button class="btn blue-btn">FIND PROPERTIES</button>
+            <button type="submit" class="btn blue-btn">FIND PROPERTIES</button>
           </form>
         </article>
       </section>
@@ -249,13 +250,22 @@
                 <hr />
                 <div class="prop-info">
                   <p class="prop-size">
-                    <img src="images/area-icon_2.svg" alt="size"/>
+                    <img src="images/area-icon_2.svg" alt="size" />
                     <b class="bold">2400</b> Sq Ft
                   </p>
                   <p class="prop-room">
-                    <img src="images/garage-icon_2.svg" alt="garage"/><span>2</span>
-                    <img src="images/bathroom-icon_2.svg" alt="bathroom"/><span>3</span>
-                    <img src="images/bedroom-icon_2.svg" alt="bedroom"/><span>3</span>
+                    <img
+                      src="images/garage-icon_2.svg"
+                      alt="garage"
+                    /><span>2</span>
+                    <img
+                      src="images/bathroom-icon_2.svg"
+                      alt="bathroom"
+                    /><span>3</span>
+                    <img
+                      src="images/bedroom-icon_2.svg"
+                      alt="bedroom"
+                    /><span>3</span>
                   </p>
                 </div>
               </div>
@@ -323,13 +333,22 @@
                 <hr />
                 <div class="prop-info">
                   <p class="prop-size">
-                    <img src="images/area-icon_2.svg" alt="size"/>
+                    <img src="images/area-icon_2.svg" alt="size" />
                     <b class="bold">2400</b> Sq Ft
                   </p>
                   <p class="prop-room">
-                    <img src="images/garage-icon_2.svg" alt="garage"/><span>2</span>
-                    <img src="images/bathroom-icon_2.svg" alt="bathroom"/><span>3</span>
-                    <img src="images/bedroom-icon_2.svg" alt="bedroom"/><span>3</span>
+                    <img
+                      src="images/garage-icon_2.svg"
+                      alt="garage"
+                    /><span>2</span>
+                    <img
+                      src="images/bathroom-icon_2.svg"
+                      alt="bathroom"
+                    /><span>3</span>
+                    <img
+                      src="images/bedroom-icon_2.svg"
+                      alt="bedroom"
+                    /><span>3</span>
                   </p>
                 </div>
               </div>
@@ -397,12 +416,18 @@
                 <hr />
                 <div class="prop-info">
                   <p class="prop-size">
-                    <img src="images/area-icon_2.svg" alt="size"/>
+                    <img src="images/area-icon_2.svg" alt="size" />
                     <b class="bold">2400</b> Sq Ft
                   </p>
                   <p class="prop-room">
-                    <img src="images/garage-icon_2.svg" alt="garage"/><span>2</span>
-                    <img src="images/bathroom-icon_2.svg" alt="bathroom"/><span>3</span>
+                    <img
+                      src="images/garage-icon_2.svg"
+                      alt="garage"
+                    /><span>2</span>
+                    <img
+                      src="images/bathroom-icon_2.svg"
+                      alt="bathroom"
+                    /><span>3</span>
                     <img src="images/bedroom-icon_2.svg" /><span>3</span>
                   </p>
                 </div>
@@ -471,13 +496,22 @@
                 <hr />
                 <div class="prop-info">
                   <p class="prop-size">
-                    <img src="images/area-icon_2.svg" alt="size"/>
+                    <img src="images/area-icon_2.svg" alt="size" />
                     <b class="bold">2400</b> Sq Ft
                   </p>
                   <p class="prop-room">
-                    <img src="images/garage-icon_2.svg" alt="garage"/><span>2</span>
-                    <img src="images/bathroom-icon_2.svg" alt="bathroom"/><span>3</span>
-                    <img src="images/bedroom-icon_2.svg" alt="bedroom"/><span>3</span>
+                    <img
+                      src="images/garage-icon_2.svg"
+                      alt="garage"
+                    /><span>2</span>
+                    <img
+                      src="images/bathroom-icon_2.svg"
+                      alt="bathroom"
+                    /><span>3</span>
+                    <img
+                      src="images/bedroom-icon_2.svg"
+                      alt="bedroom"
+                    /><span>3</span>
                   </p>
                 </div>
               </div>
@@ -543,13 +577,22 @@
                 <hr />
                 <div class="prop-info">
                   <p class="prop-size">
-                    <img src="images/area-icon_2.svg" alt="size"/>
+                    <img src="images/area-icon_2.svg" alt="size" />
                     <b class="bold">2400</b> Sq Ft
                   </p>
                   <p class="prop-room">
-                    <img src="images/garage-icon_2.svg" alt="garage"/><span>2</span>
-                    <img src="images/bathroom-icon_2.svg" alt="bathroom"/><span>3</span>
-                    <img src="images/bedroom-icon_2.svg" alt="bedroom"/><span>3</span>
+                    <img
+                      src="images/garage-icon_2.svg"
+                      alt="garage"
+                    /><span>2</span>
+                    <img
+                      src="images/bathroom-icon_2.svg"
+                      alt="bathroom"
+                    /><span>3</span>
+                    <img
+                      src="images/bedroom-icon_2.svg"
+                      alt="bedroom"
+                    /><span>3</span>
                   </p>
                 </div>
               </div>
@@ -613,13 +656,22 @@
                 <hr />
                 <div class="prop-info">
                   <p class="prop-size">
-                    <img src="images/area-icon_2.svg" alt="size"/>
+                    <img src="images/area-icon_2.svg" alt="size" />
                     <b class="bold">2400</b> Sq Ft
                   </p>
                   <p class="prop-room">
-                    <img src="images/garage-icon_2.svg" alt="garage"/><span>2</span>
-                    <img src="images/bathroom-icon_2.svg" alt="bathroom"/><span>3</span>
-                    <img src="images/bedroom-icon_2.svg" alt="bedroom"/><span>3</span>
+                    <img
+                      src="images/garage-icon_2.svg"
+                      alt="garage"
+                    /><span>2</span>
+                    <img
+                      src="images/bathroom-icon_2.svg"
+                      alt="bathroom"
+                    /><span>3</span>
+                    <img
+                      src="images/bedroom-icon_2.svg"
+                      alt="bedroom"
+                    /><span>3</span>
                   </p>
                 </div>
               </div>
@@ -685,13 +737,22 @@
                 <hr />
                 <div class="prop-info">
                   <p class="prop-size">
-                    <img src="images/area-icon_2.svg" alt="size"/>
+                    <img src="images/area-icon_2.svg" alt="size" />
                     <b class="bold">2400</b> Sq Ft
                   </p>
                   <p class="prop-room">
-                    <img src="images/garage-icon_2.svg" alt="garage"/><span>2</span>
-                    <img src="images/bathroom-icon_2.svg" alt="bathroom"/><span>3</span>
-                    <img src="images/bedroom-icon_2.svg" alt="bedroom"/><span>3</span>
+                    <img
+                      src="images/garage-icon_2.svg"
+                      alt="garage"
+                    /><span>2</span>
+                    <img
+                      src="images/bathroom-icon_2.svg"
+                      alt="bathroom"
+                    /><span>3</span>
+                    <img
+                      src="images/bedroom-icon_2.svg"
+                      alt="bedroom"
+                    /><span>3</span>
                   </p>
                 </div>
               </div>
@@ -755,13 +816,22 @@
                 <hr />
                 <div class="prop-info">
                   <p class="prop-size">
-                    <img src="images/area-icon_2.svg" alt="size"/>
+                    <img src="images/area-icon_2.svg" alt="size" />
                     <b class="bold">2400</b> Sq Ft
                   </p>
                   <p class="prop-room">
-                    <img src="images/garage-icon_2.svg" alt="garage"/><span>2</span>
-                    <img src="images/bathroom-icon_2.svg" alt="bathroom"/><span>3</span>
-                    <img src="images/bedroom-icon_2.svg" alt="bedroom"/><span>3</span>
+                    <img
+                      src="images/garage-icon_2.svg"
+                      alt="garage"
+                    /><span>2</span>
+                    <img
+                      src="images/bathroom-icon_2.svg"
+                      alt="bathroom"
+                    /><span>3</span>
+                    <img
+                      src="images/bedroom-icon_2.svg"
+                      alt="bedroom"
+                    /><span>3</span>
                   </p>
                 </div>
               </div>
@@ -825,13 +895,22 @@
                 <hr />
                 <div class="prop-info">
                   <p class="prop-size">
-                    <img src="images/area-icon_2.svg" alt="size"/>
+                    <img src="images/area-icon_2.svg" alt="size" />
                     <b class="bold">2400</b> Sq Ft
                   </p>
                   <p class="prop-room">
-                    <img src="images/garage-icon_2.svg" alt="garage"/><span>2</span>
-                    <img src="images/bathroom-icon_2.svg" alt="bathroom"/><span>3</span>
-                    <img src="images/bedroom-icon_2.svg" alt="bedroom"/><span>3</span>
+                    <img
+                      src="images/garage-icon_2.svg"
+                      alt="garage"
+                    /><span>2</span>
+                    <img
+                      src="images/bathroom-icon_2.svg"
+                      alt="bathroom"
+                    /><span>3</span>
+                    <img
+                      src="images/bedroom-icon_2.svg"
+                      alt="bedroom"
+                    /><span>3</span>
                   </p>
                 </div>
               </div>
@@ -895,13 +974,22 @@
                 <hr />
                 <div class="prop-info">
                   <p class="prop-size">
-                    <img src="images/area-icon_2.svg" alt="size"/>
+                    <img src="images/area-icon_2.svg" alt="size" />
                     <b class="bold">2400</b> Sq Ft
                   </p>
                   <p class="prop-room">
-                    <img src="images/garage-icon_2.svg" alt="garage"/><span>2</span>
-                    <img src="images/bathroom-icon_2.svg" alt="bathroom"/><span>3</span>
-                    <img src="images/bedroom-icon_2.svg" alt="bedroom"/><span>3</span>
+                    <img
+                      src="images/garage-icon_2.svg"
+                      alt="garage"
+                    /><span>2</span>
+                    <img
+                      src="images/bathroom-icon_2.svg"
+                      alt="bathroom"
+                    /><span>3</span>
+                    <img
+                      src="images/bedroom-icon_2.svg"
+                      alt="bedroom"
+                    /><span>3</span>
                   </p>
                 </div>
               </div>
@@ -965,13 +1053,22 @@
                 <hr />
                 <div class="prop-info">
                   <p class="prop-size">
-                    <img src="images/area-icon_2.svg" alt="size"/>
+                    <img src="images/area-icon_2.svg" alt="size" />
                     <b class="bold">2400</b> Sq Ft
                   </p>
                   <p class="prop-room">
-                    <img src="images/garage-icon_2.svg" alt="garage"/><span>2</span>
-                    <img src="images/bathroom-icon_2.svg" alt="bathroom"/><span>3</span>
-                    <img src="images/bedroom-icon_2.svg" alt="bedroom"/><span>3</span>
+                    <img
+                      src="images/garage-icon_2.svg"
+                      alt="garage"
+                    /><span>2</span>
+                    <img
+                      src="images/bathroom-icon_2.svg"
+                      alt="bathroom"
+                    /><span>3</span>
+                    <img
+                      src="images/bedroom-icon_2.svg"
+                      alt="bedroom"
+                    /><span>3</span>
                   </p>
                 </div>
               </div>
@@ -1035,13 +1132,22 @@
                 <hr />
                 <div class="prop-info">
                   <p class="prop-size">
-                    <img src="images/area-icon_2.svg" alt="size"/>
+                    <img src="images/area-icon_2.svg" alt="size" />
                     <b class="bold">2400</b> Sq Ft
                   </p>
                   <p class="prop-room">
-                    <img src="images/garage-icon_2.svg" alt="garage"/><span>2</span>
-                    <img src="images/bathroom-icon_2.svg" alt="bathroom"/><span>3</span>
-                    <img src="images/bedroom-icon_2.svg" alt="bedroom"/><span>3</span>
+                    <img
+                      src="images/garage-icon_2.svg"
+                      alt="garage"
+                    /><span>2</span>
+                    <img
+                      src="images/bathroom-icon_2.svg"
+                      alt="bathroom"
+                    /><span>3</span>
+                    <img
+                      src="images/bedroom-icon_2.svg"
+                      alt="bedroom"
+                    /><span>3</span>
                   </p>
                 </div>
               </div>
@@ -1088,7 +1194,10 @@
               <a href="javascript:void(0)" class="btn orange-btn"
                 >From <span class="bold">$1,700.00</span> Per Month</a
               >
-              <button class="fa-regular fa-circle-play fa-shake"></button>
+
+              <button class="fa-regular fa-circle-play">
+                <p class="remind-user">Play</p>
+              </button>
               <div class="deal-video">
                 <video id="video" controls>
                   <source src="images/video.webm" />
@@ -1097,22 +1206,24 @@
               </div>
               <ul class="info-icons">
                 <li>
-                  <img src="images/area-icon.svg" alt="area-size"/><span
+                  <img src="images/area-icon.svg" alt="area-size" /><span
                     >1600<br />Sq Ft</span
                   >
                 </li>
                 <li>
-                  <img src="images/bedroom-icon.svg" alt="bedrooms-num"/><span
-                    >2<br />Beds</span
-                  >
+                  <img
+                    src="images/bedroom-icon.svg"
+                    alt="bedrooms-num"
+                  /><span>2<br />Beds</span>
                 </li>
                 <li>
-                  <img src="images/bathroom-icon.svg" alt="bathroom-num"/><span
-                    >1<br />Bath</span
-                  >
+                  <img
+                    src="images/bathroom-icon.svg"
+                    alt="bathroom-num"
+                  /><span>1<br />Bath</span>
                 </li>
                 <li>
-                  <img src="images/garage-icon.svg" alt="garage"/><span
+                  <img src="images/garage-icon.svg" alt="garage" /><span
                     >1<br />Garage</span
                   >
                 </li>
@@ -1219,185 +1330,208 @@
             <ul class="agents-wrapper flex swiper-wrapper">
               <li class="agent swiper-slide">
                 <figure>
-                <img
-                  src="https://via.placeholder.com/450?text=Loading"
-                  data-src="images/agent-image_3.png"
-                  alt="agent-pic"
-                  class="lazy"
-                />
-              </figure>
-              <article>
-                <p class="agent-info">Real Estate Broker</p>
-                <p class="text-xl">JOHN DOE</p>
-                <p class="agent-info contact-info">
-                  <a href="tel: 1234567890">123 456 7890</a><br /><a
-                    href="mailto:agent@gmail.com"
-                    >agent@gmail.com</a
-                  >
-                </p>
-                <div class="social-lnks">
-                  <a
-                    href="javascript:void(0)"
-                    class="fa-brands fa-facebook-f"
-                  ></a>
-                  <a href="javascript:void(0)" class="fa-brands fa-twitter"></a>
-                  <a
-                    href="javascript:void(0)"
-                    class="fa-brands fa-linkedin-in"
-                  ></a>
-                </div>
-              </article>
+                  <img
+                    src="https://via.placeholder.com/450?text=Loading"
+                    data-src="images/agent-image_3.png"
+                    alt="agent-pic"
+                    class="lazy"
+                  />
+                </figure>
+                <article>
+                  <p class="agent-info">Real Estate Broker</p>
+                  <p class="text-xl">JOHN DOE</p>
+                  <p class="agent-info contact-info">
+                    <a href="tel: 1234567890">123 456 7890</a><br /><a
+                      href="mailto:agent@gmail.com"
+                      >agent@gmail.com</a
+                    >
+                  </p>
+                  <div class="social-lnks">
+                    <a
+                      href="javascript:void(0)"
+                      class="fa-brands fa-facebook-f"
+                    ></a>
+                    <a
+                      href="javascript:void(0)"
+                      class="fa-brands fa-twitter"
+                    ></a>
+                    <a
+                      href="javascript:void(0)"
+                      class="fa-brands fa-linkedin-in"
+                    ></a>
+                  </div>
+                </article>
               </li>
               <li class="agent swiper-slide">
                 <figure>
-                <img
-                  src="https://via.placeholder.com/450?text=Loading"
-                  data-src="images/agent-image_2.png"
-                  alt="agent-pic"
-                  class="lazy"
-                /></figure>
+                  <img
+                    src="https://via.placeholder.com/450?text=Loading"
+                    data-src="images/agent-image_2.png"
+                    alt="agent-pic"
+                    class="lazy"
+                  />
+                </figure>
                 <article>
-                <p class="agent-info">Real Estate Broker</p>
-                <p class="text-xl">JANE DOE</p>
-                <p class="agent-info contact-info">
-                  <a href="tel: 1234567890">123 456 7890</a><br /><a
-                    href="mailto:agent@gmail.com"
-                    >agent@gmail.com</a
-                  >
-                </p>
-                <div class="social-lnks">
-                  <a
-                    href="javascript:void(0)"
-                    class="fa-brands fa-facebook-f"
-                  ></a>
-                  <a href="javascript:void(0)" class="fa-brands fa-twitter"></a>
-                  <a
-                    href="javascript:void(0)"
-                    class="fa-brands fa-linkedin-in"
-                  ></a>
-                </div>
-              </article>
+                  <p class="agent-info">Real Estate Broker</p>
+                  <p class="text-xl">JANE DOE</p>
+                  <p class="agent-info contact-info">
+                    <a href="tel: 1234567890">123 456 7890</a><br /><a
+                      href="mailto:agent@gmail.com"
+                      >agent@gmail.com</a
+                    >
+                  </p>
+                  <div class="social-lnks">
+                    <a
+                      href="javascript:void(0)"
+                      class="fa-brands fa-facebook-f"
+                    ></a>
+                    <a
+                      href="javascript:void(0)"
+                      class="fa-brands fa-twitter"
+                    ></a>
+                    <a
+                      href="javascript:void(0)"
+                      class="fa-brands fa-linkedin-in"
+                    ></a>
+                  </div>
+                </article>
               </li>
               <li class="agent swiper-slide">
                 <figure>
-                <img
-                  src="https://via.placeholder.com/450?text=Loading"
-                  data-src="images/agent-image.png"
-                  alt="agent-pic"
-                  class="lazy"
-                /></figure>
+                  <img
+                    src="https://via.placeholder.com/450?text=Loading"
+                    data-src="images/agent-image.png"
+                    alt="agent-pic"
+                    class="lazy"
+                  />
+                </figure>
                 <article>
-                <p class="agent-info">Real Estate Broker</p>
-                <p class="text-xl">JOHN DOE</p>
-                <p class="agent-info contact-info">
-                  <a href="tel: 1234567890">123 456 7890</a><br /><a
-                    href="mailto:agent@gmail.com"
-                    >agent@gmail.com</a
-                  >
-                </p>
-                <div class="social-lnks">
-                  <a
-                    href="javascript:void(0)"
-                    class="fa-brands fa-facebook-f"
-                  ></a>
-                  <a href="javascript:void(0)" class="fa-brands fa-twitter"></a>
-                  <a
-                    href="javascript:void(0)"
-                    class="fa-brands fa-linkedin-in"
-                  ></a>
-                </div>
-              </article>
+                  <p class="agent-info">Real Estate Broker</p>
+                  <p class="text-xl">JOHN DOE</p>
+                  <p class="agent-info contact-info">
+                    <a href="tel: 1234567890">123 456 7890</a><br /><a
+                      href="mailto:agent@gmail.com"
+                      >agent@gmail.com</a
+                    >
+                  </p>
+                  <div class="social-lnks">
+                    <a
+                      href="javascript:void(0)"
+                      class="fa-brands fa-facebook-f"
+                    ></a>
+                    <a
+                      href="javascript:void(0)"
+                      class="fa-brands fa-twitter"
+                    ></a>
+                    <a
+                      href="javascript:void(0)"
+                      class="fa-brands fa-linkedin-in"
+                    ></a>
+                  </div>
+                </article>
               </li>
               <li class="agent swiper-slide">
                 <figure>
-                <img
-                  src="https://via.placeholder.com/450?text=Loading"
-                  data-src="images/agent-image_3.png"
-                  alt="agent-pic"
-                  class="lazy"
-                /></figure>
+                  <img
+                    src="https://via.placeholder.com/450?text=Loading"
+                    data-src="images/agent-image_3.png"
+                    alt="agent-pic"
+                    class="lazy"
+                  />
+                </figure>
                 <article>
-                <p class="agent-info">Real Estate Broker</p>
-                <p class="text-xl">JOHN DOE</p>
-                <p class="agent-info contact-info">
-                  <a href="tel: 1234567890">123 456 7890</a><br /><a
-                    href="mailto:agent@gmail.com"
-                    >agent@gmail.com</a
-                  >
-                </p>
-                <div class="social-lnks">
-                  <a
-                    href="javascript:void(0)"
-                    class="fa-brands fa-facebook-f"
-                  ></a>
-                  <a href="javascript:void(0)" class="fa-brands fa-twitter"></a>
-                  <a
-                    href="javascript:void(0)"
-                    class="fa-brands fa-linkedin-in"
-                  ></a>
-                </div>
-              </article>
+                  <p class="agent-info">Real Estate Broker</p>
+                  <p class="text-xl">JOHN DOE</p>
+                  <p class="agent-info contact-info">
+                    <a href="tel: 1234567890">123 456 7890</a><br /><a
+                      href="mailto:agent@gmail.com"
+                      >agent@gmail.com</a
+                    >
+                  </p>
+                  <div class="social-lnks">
+                    <a
+                      href="javascript:void(0)"
+                      class="fa-brands fa-facebook-f"
+                    ></a>
+                    <a
+                      href="javascript:void(0)"
+                      class="fa-brands fa-twitter"
+                    ></a>
+                    <a
+                      href="javascript:void(0)"
+                      class="fa-brands fa-linkedin-in"
+                    ></a>
+                  </div>
+                </article>
               </li>
               <li class="agent swiper-slide">
                 <figure>
-                <img
-                  src="https://via.placeholder.com/450?text=Loading"
-                  data-src="images/agent-image_2.png"
-                  alt="agent-pic"
-                  class="lazy"
-                /></figure>
+                  <img
+                    src="https://via.placeholder.com/450?text=Loading"
+                    data-src="images/agent-image_2.png"
+                    alt="agent-pic"
+                    class="lazy"
+                  />
+                </figure>
                 <article>
-                <p class="agent-info">Real Estate Broker</p>
-                <p class="text-xl">JANE DOE</p>
-                <p class="agent-info contact-info">
-                  <a href="tel: 1234567890">123 456 7890</a><br /><a
-                    href="mailto:agent@gmail.com"
-                    >agent@gmail.com</a
-                  >
-                </p>
-                <div class="social-lnks">
-                  <a
-                    href="javascript:void(0)"
-                    class="fa-brands fa-facebook-f"
-                  ></a>
-                  <a href="javascript:void(0)" class="fa-brands fa-twitter"></a>
-                  <a
-                    href="javascript:void(0)"
-                    class="fa-brands fa-linkedin-in"
-                  ></a>
-                </div>
-              </article>
+                  <p class="agent-info">Real Estate Broker</p>
+                  <p class="text-xl">JANE DOE</p>
+                  <p class="agent-info contact-info">
+                    <a href="tel: 1234567890">123 456 7890</a><br /><a
+                      href="mailto:agent@gmail.com"
+                      >agent@gmail.com</a
+                    >
+                  </p>
+                  <div class="social-lnks">
+                    <a
+                      href="javascript:void(0)"
+                      class="fa-brands fa-facebook-f"
+                    ></a>
+                    <a
+                      href="javascript:void(0)"
+                      class="fa-brands fa-twitter"
+                    ></a>
+                    <a
+                      href="javascript:void(0)"
+                      class="fa-brands fa-linkedin-in"
+                    ></a>
+                  </div>
+                </article>
               </li>
               <li class="agent swiper-slide">
                 <figure>
-                <img
-                  src="https://via.placeholder.com/450?text=Loading"
-                  data-src="images/agent-image.png"
-                  alt="agent-pic"
-                  class="lazy"
-                /></figure>
+                  <img
+                    src="https://via.placeholder.com/450?text=Loading"
+                    data-src="images/agent-image.png"
+                    alt="agent-pic"
+                    class="lazy"
+                  />
+                </figure>
                 <article>
-                <p class="agent-info">Real Estate Broker</p>
-                <p class="text-xl">JOHN DOE</p>
-                <p class="agent-info contact-info">
-                  <a href="tel: 1234567890">123 456 7890</a><br /><a
-                    href="mailto:agent@gmail.com"
-                    >agent@gmail.com</a
-                  >
-                </p>
-                <div class="social-lnks">
-                  <a
-                    href="javascript:void(0)"
-                    class="fa-brands fa-facebook-f"
-                  ></a>
-                  <a href="javascript:void(0)" class="fa-brands fa-twitter"></a>
-                  <a
-                    href="javascript:void(0)"
-                    class="fa-brands fa-linkedin-in"
-                  ></a>
-                </div>
-              </article>
-              </li> 
+                  <p class="agent-info">Real Estate Broker</p>
+                  <p class="text-xl">JOHN DOE</p>
+                  <p class="agent-info contact-info">
+                    <a href="tel: 1234567890">123 456 7890</a><br /><a
+                      href="mailto:agent@gmail.com"
+                      >agent@gmail.com</a
+                    >
+                  </p>
+                  <div class="social-lnks">
+                    <a
+                      href="javascript:void(0)"
+                      class="fa-brands fa-facebook-f"
+                    ></a>
+                    <a
+                      href="javascript:void(0)"
+                      class="fa-brands fa-twitter"
+                    ></a>
+                    <a
+                      href="javascript:void(0)"
+                      class="fa-brands fa-linkedin-in"
+                    ></a>
+                  </div>
+                </article>
+              </li>
             </ul>
             <div class="swiper-pagination"></div>
           </div>
@@ -1426,7 +1560,10 @@
           <ul class="flex">
             <li>
               <div class="ratings">
-                <span><img src="images/verified-icon.svg" alt="verified"/> Verfied</span>
+                <span
+                  ><img src="images/verified-icon.svg" alt="verified" />
+                  Verfied</span
+                >
                 <span><i class="fa-solid fa-star"></i>4.5</span>
               </div>
               <img
@@ -1435,7 +1572,7 @@
                 class="agency-logo"
               />
               <p class="agency-info">
-                <img src="images/flag.svg" alt="flag"/>San Francisco, USA
+                <img src="images/flag.svg" alt="flag" />San Francisco, USA
               </p>
               <p class="text-xl">ProHouse</p>
               <p class="agency-info contact-info">
@@ -1450,7 +1587,10 @@
             </li>
             <li>
               <div class="ratings">
-                <span><img src="images/verified-icon.svg" alt="verified"/> Verfied</span>
+                <span
+                  ><img src="images/verified-icon.svg" alt="verified" />
+                  Verfied</span
+                >
                 <span><i class="fa-solid fa-star"></i>4.5</span>
               </div>
               <img
@@ -1459,7 +1599,7 @@
                 class="agency-logo"
               />
               <p class="agency-info">
-                <img src="images/flag.svg" alt="flag"/>Los Angeles, USA
+                <img src="images/flag.svg" alt="flag" />Los Angeles, USA
               </p>
               <p class="text-xl">beHome</p>
               <p class="agency-info contact-info">
@@ -1474,7 +1614,10 @@
             </li>
             <li>
               <div class="ratings">
-                <span><img src="images/verified-icon.svg" alt="verified"/> Verfied</span>
+                <span
+                  ><img src="images/verified-icon.svg" alt="verified" />
+                  Verfied</span
+                >
                 <span><i class="fa-solid fa-star"></i>4.5</span>
               </div>
               <img
@@ -1483,7 +1626,7 @@
                 class="agency-logo"
               />
               <p class="agency-info">
-                <img src="images/flag.svg" alt="flag"/>Seattle, USA
+                <img src="images/flag.svg" alt="flag" />Seattle, USA
               </p>
               <p class="text-xl">Alain Doe</p>
               <p class="agency-info contact-info">

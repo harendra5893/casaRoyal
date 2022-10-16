@@ -255,8 +255,7 @@ body {
 }
 @media only screen and (min-width: 760px) {
   .blue-btn:hover {
-    background-color: #ffffff;
-    color: #2a41e8;
+    background-color: darkblue;
     box-shadow: 0 0 5px #9b9b9b;
   }
 }
@@ -298,6 +297,114 @@ body {
   .arrow-btn:hover {
     box-shadow: 0 0 5px #ffffff;
   }
+}
+
+.agents {
+  background-color: #f3f3f3;
+}
+.agents .agent {
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+.agents figure {
+  margin-bottom: 28px;
+}
+.agents img {
+  display: block;
+}
+.agents .text-xl {
+  margin-top: 16px;
+  margin-bottom: 28px;
+}
+.agents .social-lnks {
+  border-radius: 4px;
+  border: solid 1px #ececec;
+  font-size: 0;
+  display: inline-block;
+  margin-top: 44px;
+}
+.agents .social-lnks .fa-brands {
+  border-right: solid 1px #ececec;
+  padding: 12px 20px;
+  font-size: initial;
+}
+.agents .social-lnks .fa-brands:last-child {
+  border-right: none;
+}
+@media only screen and (min-width: 760px) {
+  .agents .agents-wrapper {
+    flex-direction: row;
+  }
+  .agents .agent {
+    flex: 0 0 32%;
+  }
+}
+
+.reviews {
+  background: url(images/testimonials-bg-1.png) no-repeat center/cover;
+  min-height: 844px;
+}
+.reviews .container {
+  position: relative;
+  top: 150px;
+}
+.reviews .text-top,
+.reviews .review__text {
+  color: #fafafa;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.reviews .text-top {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.reviews .review__title {
+  font-size: 56px;
+  color: #ffffff;
+  margin-bottom: 100px;
+}
+.reviews .review-slider {
+  display: flex;
+  overflow: hidden;
+}
+.reviews li {
+  flex: 0 0 100%;
+}
+.reviews .review__text {
+  font-size: 22px;
+  line-height: 1.6;
+  margin-bottom: 50px;
+}
+.reviews .cx-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+.reviews .cx {
+  display: flex;
+  column-gap: 30px;
+}
+.reviews .cx-info {
+  align-self: center;
+}
+.reviews .review__name {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  color: #fafafa;
+}
+.reviews .review__city {
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  color: #afafaf;
+}
+.reviews .btns {
+  position: absolute;
+  right: 4%;
+  bottom: 5%;
 }
 
 .header {
@@ -364,14 +471,14 @@ body {
 .header .nav-items {
   display: none;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   top: 81px;
   left: 0;
   width: 100%;
   background-color: white;
   align-items: center;
   row-gap: 10%;
-  height: 100vh;
+  height: 100%;
   padding-top: 50px;
 }
 .header .popup-menu {
@@ -414,7 +521,7 @@ body {
   transform-origin: left;
   transform: scaleX(1);
 }
-.header .popup-menu::after, .header .popup-menu::before {
+.header .popup-menu::after {
   content: "";
   position: absolute;
   bottom: 100%;
@@ -516,8 +623,6 @@ body {
   background: url(images/hero-bg-image.png) no-repeat center/cover;
   background: image-set(url(images/hero-bg-image.png) 1x, url(images/hero-bg-image@2x.png) 2x) no-repeat center/cover;
   min-height: 750px;
-  display: flex;
-  align-items: center;
 }
 .hero .container {
   max-width: 1400px;
@@ -544,6 +649,9 @@ form input {
   font-weight: 600;
   margin-bottom: 40px;
 }
+form input:focus {
+  outline: 1px solid #2a41e8;
+}
 form .form__dropdown {
   position: relative;
   margin-bottom: 30px;
@@ -563,13 +671,13 @@ form .form__dropdown .fa-angle-down {
   bottom: 4px;
   transition: 0.3s ease;
 }
-form .selected {
+form .selected, form > .input {
   border-radius: 4px;
   padding: 26px 10px 5px 10px;
   background-color: #ececec;
   height: 100%;
 }
-form > .selected {
+form > .input {
   max-width: 274px;
   padding: 16px 10px 15px 10px;
 }
@@ -583,9 +691,9 @@ form .options {
   background-color: #ececec;
   border-radius: 4px;
   width: 100%;
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.3s ease;
+  height: 0;
+  overflow: auto;
+  transition: height 0.3s ease;
   z-index: 50;
 }
 form .option {
@@ -593,11 +701,36 @@ form .option {
   border-bottom: 1px solid lightgray;
 }
 form .options.active {
-  visibility: visible;
-  opacity: 1;
+  height: 216px;
 }
 form .options.active + .fa-angle-down {
   transform: rotate(180deg);
+}
+form .blue-btn.is-loading {
+  position: relative;
+  color: transparent;
+}
+form .blue-btn.is-loading::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 1.4em;
+  height: 1.4em;
+  top: 50%;
+  left: 50%;
+  margin-left: -0.7em;
+  margin-top: -0.7em;
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: spin 0.5s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 @media only screen and (min-width: 760px) {
   form {
@@ -616,10 +749,10 @@ form .options.active + .fa-angle-down {
   }
 }
 @media only screen and (min-width: 760px) {
-  form .form__dropdown .selected {
+  form .form__dropdown .selected, form .form__dropdown form > .input {
     min-width: 274px;
   }
-  form > .selected {
+  form > .input {
     min-width: 450px;
   }
 }
@@ -981,6 +1114,32 @@ form .options.active + .fa-angle-down {
   display: block;
   margin: 60px 0;
   color: #9b9b9b;
+  position: relative;
+}
+.hot-deals .fa-circle-play .remind-user {
+  position: absolute;
+  top: -30px;
+  width: 100%;
+  font-size: 14px;
+  letter-spacing: 2px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+.hot-deals .fa-circle-play .remind-user::after {
+  content: "";
+  position: absolute;
+  left: 40%;
+  bottom: -10px;
+  width: 0;
+  height: 0;
+  border-top: solid 8px #9b9b9b;
+  border-left: solid 8px transparent;
+  border-right: solid 8px transparent;
+}
+.hot-deals .fa-circle-play .remind-user.remind {
+  visibility: visible;
+  opacity: 1;
 }
 .hot-deals .info-icons {
   display: flex;
@@ -1075,48 +1234,6 @@ form .options.active + .fa-angle-down {
   }
   .areas li:nth-child(2), .areas li:nth-child(3) {
     flex: 1 1 60%;
-  }
-}
-
-.agents {
-  background-color: #f3f3f3;
-}
-.agents .agent {
-  padding: 30px;
-  background-color: #ffffff;
-  border-radius: 4px;
-}
-.agents figure {
-  margin-bottom: 28px;
-}
-.agents img {
-  display: block;
-}
-.agents .text-xl {
-  margin-top: 16px;
-  margin-bottom: 28px;
-}
-.agents .social-lnks {
-  border-radius: 4px;
-  border: solid 1px #ececec;
-  font-size: 0;
-  display: inline-block;
-  margin-top: 44px;
-}
-.agents .social-lnks .fa-brands {
-  border-right: solid 1px #ececec;
-  padding: 12px 20px;
-  font-size: initial;
-}
-.agents .social-lnks .fa-brands:last-child {
-  border-right: none;
-}
-@media only screen and (min-width: 760px) {
-  .agents .agents-wrapper {
-    flex-direction: row;
-  }
-  .agents .agent {
-    flex: 0 0 32%;
   }
 }
 
@@ -1311,70 +1428,4 @@ form .options.active + .fa-angle-down {
   .our-values .value {
     flex: 0 0 32.5%;
   }
-}
-
-.reviews {
-  background: url(images/testimonials-bg-1.png) no-repeat center/cover;
-  min-height: 844px;
-}
-.reviews .container {
-  position: relative;
-  top: 150px;
-}
-.reviews .text-top,
-.reviews .review__text {
-  color: #fafafa;
-  font-weight: 500;
-  letter-spacing: 2px;
-}
-.reviews .text-top {
-  font-size: 14px;
-  margin-bottom: 12px;
-}
-.reviews .review__title {
-  font-size: 56px;
-  color: #ffffff;
-  margin-bottom: 100px;
-}
-.reviews .review-slider {
-  display: flex;
-  overflow: hidden;
-}
-.reviews li {
-  flex: 0 0 100%;
-}
-.reviews .review__text {
-  font-size: 22px;
-  line-height: 1.6;
-  margin-bottom: 50px;
-}
-.reviews .cx-img {
-  width: 90px;
-  height: 90px;
-  border-radius: 100%;
-  object-fit: cover;
-  vertical-align: middle;
-}
-.reviews .cx {
-  display: flex;
-  column-gap: 30px;
-}
-.reviews .cx-info {
-  align-self: center;
-}
-.reviews .review__name {
-  font-size: 24px;
-  font-weight: 500;
-  letter-spacing: 0.8px;
-  color: #fafafa;
-}
-.reviews .review__city {
-  font-size: 15px;
-  letter-spacing: 0.5px;
-  color: #afafaf;
-}
-.reviews .btns {
-  position: absolute;
-  right: 4%;
-  bottom: 5%;
 }
