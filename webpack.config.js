@@ -24,7 +24,7 @@ module.exports = {
   },
 
   devServer: {
-    static: "./src",
+    static: "./",
   },
 
   module: {
@@ -54,7 +54,21 @@ module.exports = {
       },
       {
         test: /\.html$/,
-        use: ["html-loader"],
+        use: {
+          loader: "html-loader",
+          options: {
+            sources: {
+              list: [
+                "...", // important, to correctly handle the default tags like 'src'
+                {
+                  tag: "img",
+                  attribute: "data-src",
+                  type: "src",
+                },
+              ],
+            },
+          },
+        },
       },
     ],
   },
