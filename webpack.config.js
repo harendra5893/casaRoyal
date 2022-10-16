@@ -65,6 +65,11 @@ module.exports = {
                   attribute: "data-src",
                   type: "src",
                 },
+                {
+                  tag: "img",
+                  attribute: "data-srcset",
+                  type: "srcset",
+                },
               ],
             },
           },
