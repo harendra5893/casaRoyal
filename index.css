@@ -88,6 +88,11 @@ html {
   scroll-behavior: smooth;
 }
 
+main, footer {
+  position: relative;
+  top: 100vh;
+}
+
 .reveal {
   transform: translateY(150px);
   opacity: 0;
@@ -626,6 +631,8 @@ body {
 }
 .hero .container {
   max-width: 1400px;
+  position: fixed;
+  top: 0;
 }
 .hero .hero__title {
   font-size: 42px;

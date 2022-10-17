@@ -1,0 +1,20 @@
+[
+        {
+        "image": "images/image_3.png",
+        "category": "Category 1",
+        "title": "Buying a Home",
+        "date": "DECEMBER 28, 2018"
+    },
+    {
+        "image": "images/image_2.png",
+        "category": "Category 2",
+        "title": "Pros and Cons on a CountrySide House",
+        "date": "DECEMBER 28, 2018"
+    },
+    {
+        "image": "images/image_2.png",
+        "category": "Category 3",
+        "title": "Buying a Home",
+        "date": "DECEMBER 28, 2018"
+    }
+]

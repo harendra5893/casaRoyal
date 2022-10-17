@@ -71,115 +71,116 @@
         </div>
       </div>
     </header>
+    <section class="hero flex">
+      <article class="container">
+        <h1 class="hero__title">Let Us Guide You Home</h1>
+        <p>Find the house of your dreams</p>
+        <form id="form">
+          <div class="form__dropdown">
+            <span>Type</span>
+            <div class="selected">
+              <h5 class="type">Select Type</h5>
+            </div>
+
+            <div class="options">
+              <div class="option">
+                <input
+                  type="radio"
+                  class="radio"
+                  id="penthouse"
+                  name="category"
+                />
+                <label for="penthouse" class="type">PentHouse</label>
+              </div>
+              <div class="option">
+                <input
+                  type="radio"
+                  class="radio"
+                  id="villa"
+                  name="category"
+                />
+                <label for="villa" class="type">Villa</label>
+              </div>
+              <div class="option">
+                <input
+                  type="radio"
+                  class="radio"
+                  id="8-Bhk"
+                  name="category"
+                />
+                <label for="8-Bhk" class="type">8 - Bhk</label>
+              </div>
+              <div class="option">
+                <input
+                  type="radio"
+                  class="radio"
+                  id="6-Bhk"
+                  name="category"
+                />
+                <label for="6-Bhk" class="type">6 - Bhk</label>
+              </div>
+            </div>
+            <i class="fa-sharp fa-solid fa-angle-down"></i>
+          </div>
+
+          <div class="form__dropdown">
+            <span>Status</span>
+            <div class="selected">
+              <h5 class="type">Select Status</h5>
+            </div>
+            <div class="options">
+              <div class="option">
+                <input
+                  type="radio"
+                  class="radio"
+                  id="penthouse"
+                  name="category"
+                />
+                <label for="penthouse" class="type">Verified</label>
+              </div>
+              <div class="option">
+                <input
+                  type="radio"
+                  class="radio"
+                  id="villa"
+                  name="category"
+                />
+                <label for="villa" class="type">Non-verified</label>
+              </div>
+              <div class="option">
+                <input
+                  type="radio"
+                  class="radio"
+                  id="8-Bhk"
+                  name="category"
+                />
+                <label for="8-Bhk" class="type">Premium-Verified</label>
+              </div>
+              <div class="option">
+                <input
+                  type="radio"
+                  class="radio"
+                  id="6-Bhk"
+                  name="category"
+                />
+                <label for="6-Bhk" class="type">Premium- NonVerified</label>
+              </div>
+            </div>
+            <i class="fa-sharp fa-solid fa-angle-down"></i>
+          </div>
+
+          <input
+            class="input"
+            type="text"
+            name="search"
+            placeholder="Search for properties or keywords…"
+          />
+          <button type="submit" class="btn blue-btn">FIND PROPERTIES</button>
+        </form>
+      </article>
+    </section>
     <main>
-      <section class="hero flex">
-        <article class="container">
-          <h1 class="hero__title">Let Us Guide You Home</h1>
-          <p>Find the house of your dreams</p>
-          <form id="form">
-            <div class="form__dropdown">
-              <span>Type</span>
-              <div class="selected">
-                <h5 class="type">Select Type</h5>
-              </div>
-
-              <div class="options">
-                <div class="option">
-                  <input
-                    type="radio"
-                    class="radio"
-                    id="penthouse"
-                    name="category"
-                  />
-                  <label for="penthouse" class="type">PentHouse</label>
-                </div>
-                <div class="option">
-                  <input
-                    type="radio"
-                    class="radio"
-                    id="villa"
-                    name="category"
-                  />
-                  <label for="villa" class="type">Villa</label>
-                </div>
-                <div class="option">
-                  <input
-                    type="radio"
-                    class="radio"
-                    id="8-Bhk"
-                    name="category"
-                  />
-                  <label for="8-Bhk" class="type">8 - Bhk</label>
-                </div>
-                <div class="option">
-                  <input
-                    type="radio"
-                    class="radio"
-                    id="6-Bhk"
-                    name="category"
-                  />
-                  <label for="6-Bhk" class="type">6 - Bhk</label>
-                </div>
-              </div>
-              <i class="fa-sharp fa-solid fa-angle-down"></i>
-            </div>
-
-            <div class="form__dropdown">
-              <span>Status</span>
-              <div class="selected">
-                <h5 class="type">Select Status</h5>
-              </div>
-              <div class="options">
-                <div class="option">
-                  <input
-                    type="radio"
-                    class="radio"
-                    id="penthouse"
-                    name="category"
-                  />
-                  <label for="penthouse" class="type">Verified</label>
-                </div>
-                <div class="option">
-                  <input
-                    type="radio"
-                    class="radio"
-                    id="villa"
-                    name="category"
-                  />
-                  <label for="villa" class="type">Non-verified</label>
-                </div>
-                <div class="option">
-                  <input
-                    type="radio"
-                    class="radio"
-                    id="8-Bhk"
-                    name="category"
-                  />
-                  <label for="8-Bhk" class="type">Premium-Verified</label>
-                </div>
-                <div class="option">
-                  <input
-                    type="radio"
-                    class="radio"
-                    id="6-Bhk"
-                    name="category"
-                  />
-                  <label for="6-Bhk" class="type">Premium- NonVerified</label>
-                </div>
-              </div>
-              <i class="fa-sharp fa-solid fa-angle-down"></i>
-            </div>
-
-            <input
-              class="input"
-              type="text"
-              name="search"
-              placeholder="Search for properties or keywords…"
-            />
-            <button type="submit" class="btn blue-btn">FIND PROPERTIES</button>
-          </form>
-        </article>
-      </section>
+      
       <section class="featured py-main" id="featured-sec">
         <div class="container">
           <p class="title-txt mb-tt reveal">CASAROYAL REAL ESTATE AGENCY</p>
