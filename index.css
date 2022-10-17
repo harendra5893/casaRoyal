@@ -628,11 +628,11 @@ body {
   background: url(images/hero-bg-image.png) no-repeat center/cover;
   background: image-set(url(images/hero-bg-image.png) 1x, url(images/hero-bg-image@2x.png) 2x) no-repeat center/cover;
   min-height: 750px;
+  position: fixed;
+  top: 0;
 }
 .hero .container {
   max-width: 1400px;
-  position: fixed;
-  top: 0;
 }
 .hero .hero__title {
   font-size: 42px;
@@ -1372,7 +1372,7 @@ form .blue-btn.is-loading::after {
   font-weight: 600;
   margin-bottom: 68px;
 }
-.articles .article__date {
+.articles .date {
   color: #111111;
   font-size: 14px;
   font-weight: 500;
@@ -1380,7 +1380,7 @@ form .blue-btn.is-loading::after {
   border-top: 1px solid #f3f3f3;
   padding-top: 30px;
 }
-.articles .article__date .fa-clock {
+.articles .date .fa-clock {
   color: #ff5e15;
   margin-right: 6px;
 }
