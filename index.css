@@ -94,7 +94,7 @@ main, footer {
 }
 
 .reveal {
-  transform: translateY(150px);
+  transform: translateY(50px);
   opacity: 0;
   transition: all 1s ease;
 }
@@ -115,7 +115,11 @@ main, footer {
   display: none;
 }
 
-.stop-scrolling .popup-background {
+.popup-open {
+  overflow: hidden;
+}
+
+.popup-open .popup-background {
   display: block;
 }
 
@@ -335,6 +339,9 @@ body {
 .agents {
   background-color: #f3f3f3;
 }
+.agents .agents-wrapper {
+  min-height: 666px;
+}
 .agents .agent {
   padding: 30px;
   background-color: #ffffff;
@@ -364,14 +371,6 @@ body {
 }
 .agents .social-lnks .fa-brands:last-child {
   border-right: none;
-}
-@media only screen and (min-width: 760px) {
-  .agents .agents-wrapper {
-    flex-direction: row;
-  }
-  .agents .agent {
-    flex: 0 0 32%;
-  }
 }
 
 .reviews {
@@ -754,12 +753,12 @@ form .blue-btn.is-loading::after {
   position: absolute;
   content: "";
   display: block;
-  width: 1.4em;
-  height: 1.4em;
+  width: 22.4px;
+  height: 22.4px;
   top: 50%;
   left: 50%;
-  margin-left: -0.7em;
-  margin-top: -0.7em;
+  margin-left: -11.2px;
+  margin-top: -11.2px;
   border-top: 2px solid white;
   border-radius: 50%;
   animation: spin 0.5s linear infinite;
@@ -1069,6 +1068,7 @@ form .blue-btn.is-loading::after {
   .featured .properties-container {
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: initial;
   }
   .featured li {
     flex: 0 0 32.5%;
@@ -1147,31 +1147,14 @@ form .blue-btn.is-loading::after {
   margin: 60px 0;
   color: #9b9b9b;
   position: relative;
+  box-shadow: 0 0 0 20px transparent;
+  border-radius: 100%;
+  animation: pulse 1s ease-out infinite;
 }
-.hot-deals .fa-circle-play .remind-user {
-  position: absolute;
-  top: -30px;
-  width: 100%;
-  font-size: 14px;
-  letter-spacing: 2px;
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.3s ease;
-}
-.hot-deals .fa-circle-play .remind-user::after {
-  content: "";
-  position: absolute;
-  left: 40%;
-  bottom: -10px;
-  width: 0;
-  height: 0;
-  border-top: solid 8px #9b9b9b;
-  border-left: solid 8px transparent;
-  border-right: solid 8px transparent;
-}
-.hot-deals .fa-circle-play .remind-user.remind {
-  visibility: visible;
-  opacity: 1;
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0;
+  }
 }
 .hot-deals .info-icons {
   display: flex;
@@ -1311,7 +1294,9 @@ form .blue-btn.is-loading::after {
   text-align: center;
   padding: 30px 32px 40px;
   margin-bottom: 30px;
-  box-shadow: 0 0 8px #ececec;
+}
+.our-agencies li:hover {
+  box-shadow: 0 0 5px #ececec;
 }
 .our-agencies .ratings {
   display: flex;
