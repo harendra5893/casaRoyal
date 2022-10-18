@@ -90,7 +90,7 @@ html {
 
 main, footer {
   position: relative;
-  top: 100vh;
+  top: 750px;
 }
 
 .reveal {
