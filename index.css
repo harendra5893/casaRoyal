@@ -272,8 +272,6 @@ body {
 }
 
 .blue-btn {
-  max-width: 214px;
-  min-width: 204px;
   background-color: #2a41e8;
   border-radius: 4px;
 }
@@ -681,6 +679,7 @@ body {
 form {
   display: flex;
   flex-direction: column;
+  max-width: 274px;
 }
 form input {
   font-size: 18px;
@@ -694,7 +693,6 @@ form input:focus {
 form .form__dropdown {
   position: relative;
   margin-bottom: 30px;
-  max-width: 274px;
   cursor: pointer;
 }
 form .form__dropdown span {
@@ -717,7 +715,6 @@ form .selected, form > .input {
   height: 100%;
 }
 form > .input {
-  max-width: 274px;
   padding: 16px 10px 15px 10px;
 }
 form .type {
@@ -779,6 +776,7 @@ form .blue-btn.is-loading::after {
     background-color: #ffffff;
     padding: 30px;
     border-radius: 4px;
+    max-width: initial;
   }
   form input {
     margin-bottom: 0;
@@ -1079,9 +1077,10 @@ form .blue-btn.is-loading::after {
   position: relative;
   font-size: 0;
 }
-.hot-deals figure img {
+.hot-deals figure video {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .hot-deals figcaption a {
   position: absolute;
@@ -1367,6 +1366,9 @@ form .blue-btn.is-loading::after {
 }
 .articles article {
   padding: 30px;
+  min-height: 281px;
+  display: flex;
+  flex-direction: column;
 }
 .articles .category {
   font-size: 13px;
@@ -1376,11 +1378,11 @@ form .blue-btn.is-loading::after {
   padding: 4px 12px;
   display: inline-block;
   margin-bottom: 16px;
+  align-self: baseline;
 }
 .articles .card-title {
   text-transform: uppercase;
   font-weight: 600;
-  margin-bottom: 68px;
 }
 .articles .date {
   color: #111111;
@@ -1389,6 +1391,7 @@ form .blue-btn.is-loading::after {
   letter-spacing: 1px;
   border-top: 1px solid #f3f3f3;
   padding-top: 30px;
+  margin: auto 0 0 0;
 }
 .articles .date .fa-clock {
   color: #ff5e15;

@@ -39,7 +39,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(webm|jpe?g|png|gif|svg)$/,
+        test: /\.(webm|mp4|jpe?g|png|gif|svg)$/,
         type: "asset/resource",
         generator: {
           filename: "images/[name][ext][query]",
