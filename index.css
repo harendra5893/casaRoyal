@@ -264,6 +264,7 @@ body {
 .btn {
   font-size: 18px;
   color: #ffffff;
+  display: inline-block;
   font-weight: 500;
   padding: 12px 28px;
   text-transform: uppercase;
@@ -283,7 +284,6 @@ body {
 }
 
 .black-btn {
-  display: inline-block;
   background-color: #000000;
   border-radius: 28px;
   letter-spacing: 2px;
