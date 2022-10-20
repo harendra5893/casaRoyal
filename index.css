@@ -88,6 +88,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.is-hidden {
+  display: none;
+}
+
 main, footer {
   position: relative;
   top: 750px;
